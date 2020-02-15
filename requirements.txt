@@ -1,0 +1,10 @@
+tensorflow-gpu==1.15.0
+matplotlib==3.1.3
+pandas==1.0.1
+tf2onnx==1.5.5
+moviepy==1.0.1
+opencv-python
+psutil
+line_profiler
+neptune-client
+seaborn

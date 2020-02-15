@@ -1,0 +1,10 @@
+tensorflow==1.15.0
+munch
+pandas
+gym==0.10.9
+lucid
+matplotlib
+neptune-client
+psutil
+git+https://github.com/uber-research/atari-model-zoo.git
+git+https://github.com/hardmaru/estool.git

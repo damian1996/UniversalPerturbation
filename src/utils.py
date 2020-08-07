@@ -214,6 +214,24 @@ def normalize2(results, random_score, trained_score, game):
 
     return np.array(all_results).sum() / 3
 
+def normalize_results(results, random_score, trained_score):
+    all_results = []
+    for i in range(len(results)):
+        x = results[i]
+        if random_score[i] == trained_score[i]:
+            score = 0.0
+        else:
+            score = (x - random_score[i]) / (trained_score[i] - random_score[i])
+        
+        if score < 0:
+            score = 0
+        elif score > 1:
+            score = 1
+        
+        all_results.append(score)
+
+    return all_results
+
 def normalize_result_for_one_policy(results, random_score, trained_score, game):
     all_results = []
     for i in range(1):

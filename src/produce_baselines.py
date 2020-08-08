@@ -47,7 +47,11 @@ def produce_baselines_from_uber(baseline_type, random_act, games=None):
             np.save(open(f"all_baselines_from_uber/{baseline_type}/{game}_{algo}_policy_score.npy", "wb"), scores)
 
 def read_baselines_from_files(baseline_type, games, algo):
-    utils.fix_path()
+    # utils.fix_path()
+    initial_path = os.getcwd()
+    if "src" not in initial_path:
+        new_path = fix_path_for_baselines()
+        os.chdir(new_path)
 
     policy_scores = []
     for i, game in enumerate(games):
@@ -55,7 +59,33 @@ def read_baselines_from_files(baseline_type, games, algo):
         #print("Mean score", mean_score)
         policy_scores.append(mean_score)
 
+    print(policy_scores)
+    os.chdir(initial_path)
     return policy_scores
+
+def fix_path_for_baselines():
+    new_path = ""
+    recover_path = ""
+    while True:
+        current_path = os.getcwd()
+        files = os.listdir(current_path)
+
+        if 'UniversalPerturbation' in files:
+            os.chdir(recover_path)
+            return f"{new_path}/UniversalPerturbation/src"
+        else:
+            if len(new_path) == 0:
+                new_path = ".."
+            else:
+                new_path = f"{new_path}/.."
+        
+        shorher_current_path = current_path.split('/')[-1]
+        if len(recover_path) == 0:
+            recover_path = shorher_current_path
+        else:
+            recover_path = f"{shorher_current_path}/{recover_path}"
+
+        os.chdir("..")
 
 if __name__ == "__main__":
     #baseline_type = sys.argv[1]

@@ -245,6 +245,119 @@ def parse_results_for_lrs_experiments(results, game):
     
     return results2
 
+def save_old_fashion_transfer_data_in_neptune(pert_type, algo, nr_pert, magnitude, all_games, main_path, case_name):
+    results = []
+    all_c = 0
+    for ii, game in enumerate(all_games):
+        path = f"{main_path}/{pert_type}/{algo}/results/{game}/{nr_pert}/{magnitude}"
+        results_per_game = []
+        for test_game in all_games:
+            test_game_path = f"{path}/{test_game.lower()}.npy"
+            result = np.load(test_game_path)
+            results_per_game.append(result)
+            # print(results_per_game)
+            all_c += 1
+        
+        results_per_game = np.squeeze(np.array(results_per_game))
+        results.append(results_per_game)
+    
+    results = np.array(results)
+    save_transfer_data(results, None, pert_type, algo, nr_pert, magnitude, games, case_name)
+    # tutaj wrzuc do neptuna
+
+def save_transfer_data(data, pert_type, algo, nr_pert, magnitude, games, case_name):
+    neptune.init('damian1996/ResultsForTransferTables', api_token="eyJhcGlfYWRkcmVzcyI6Imh0dHBzOi8vdWkubmVwdHVuZS5haSIsImFwaV91cmwiOiJodHRwczovL3VpLm5lcHR1bmUuYWkiLCJhcGlfa2V5IjoiY2I0NDZhMDktODgyNC00ZjlmLWJhMTktOGNlY2IwODMwMjJhIn0=")
+    
+    # hyperparameters = {'batch_size': batch_size, 'lr': lr, 'trajectories_per_game': 39}
+    neptune.create_experiment(name=f"Transfer table for {algo} & {pert_type} & {magnitude} & {nr_pert}") #, params=hyperparameters)
+
+    # neptune.log_text("Experiment description", f"Used games: {game_name}")
+    
+    # for val_loss in results_noise["losses"]:
+    #     neptune.log_metric(f'loss_{game_name}', val_loss)
+
+    with open("transfer_table.npy", 'wb') as f:
+        np.save(f, data)
+
+    neptune.log_artifact("transfer_table.npy")
+
+    pert_type = f"pert_type_{pert_type}"
+    nr_pert = f"nr_pert_{nr_pert}"
+    magnitude = f"magnitude_{magnitude}"
+    case_name = f"special_tag_{case_name}"
+    algo = f"algo_{algo}"
+    # neptune.append_tag(pert_type, algo, magnitude, nr_pert, case_name)
+
+def save_perturbation(data, perts, pert_type, algo, nr_pert, magnitude, case_name):
+    neptune.init('damian1996/SavedPerturbations', api_token="eyJhcGlfYWRkcmVzcyI6Imh0dHBzOi8vdWkubmVwdHVuZS5haSIsImFwaV91cmwiOiJodHRwczovL3VpLm5lcHR1bmUuYWkiLCJhcGlfa2V5IjoiY2I0NDZhMDktODgyNC00ZjlmLWJhMTktOGNlY2IwODMwMjJhIn0=")
+    
+    neptune.create_experiment(name=f"Transfer table for {algo} & {pert_type} & {magnitude} & {nr_pert}") #, params=hyperparameters)
+
+    with open("pert.npy", 'wb') as f:
+        np.save(f, perts)
+
+    neptune.log_artifact("pert.npy")
+
+    pert_type = f"pert_type_{pert_type}"
+    nr_pert = f"nr_pert_{nr_pert}"
+    magnitude = f"magnitude_{magnitude}"
+    case_name = f"special_tag_{case_name}"
+    algo = f"algo_{algo}"
+    # neptune.append_tag(pert_type, algo, magnitude, nr_pert, case_name)
+
+def get_perturbations(algo, mode, nr_pert, max_noise, special_label_for_neptun):
+    api_token = os.environ['NEPTUNE_API_TOKEN']
+    session = neptune.Session.with_default_backend(api_token=api_token)
+    project = session.get_project('damian1996/SavedPerturbations')
+    exps = project.get_experiments(tag=algo)
+    
+    exps2 = []
+    for exp in exps:
+        tags = exp.get_tags()
+        if (mode in tags) and (nr_pert in tags) and (max_noise in tags) and (special_label_for_neptun in tags):
+            exps2.append(exp)
+
+    return exps2
+
+def is_perturbation_computed(algo, mode, nr_pert, max_noise, special_label_for_neptun):
+    exps = get_perturbations(algo, mode, nr_pert, max_noise, special_label_for_neptun)
+    return len(exps) > 0
+
+def get_transfer_data(algo, mode, nr_pert, max_noise, special_label_for_neptun):
+    api_token = os.environ['NEPTUNE_API_TOKEN']
+    session = neptune.Session.with_default_backend(api_token=api_token)
+    project = session.get_project('damian1996/ResultsForTransferTables')
+    exps = project.get_experiments(tag=algo)
+    
+    exps2 = []
+    for exp in exps:
+        tags = exp.get_tags()
+        if (mode in tags) and (nr_pert in tags) and (max_noise in tags) and (special_label_for_neptun in tags):
+            exps2.append(exp)
+
+    return exps2
+
+
+if __name__ == '__main__':
+    main_path = "final_results"
+    case_name = main_path
+    pert_types = ["trained", "random"]
+    algos = ["rainbow", "dqn", "ga", "es", "a2c"]
+    games = [
+        'BankHeist', 'Centipede', 'Phoenix', 'ChopperCommand', 'Gopher', 
+        'Krull', 'YarsRevenge', 'Seaquest', 'Atlantis', 'Pong', 
+        'Assault', 'Solaris', 'UpNDown', 'DoubleDunk', 'Breakout',
+        'Tennis', 'StarGunner', 'Zaxxon', 'Qbert', 'Gravitar'
+    ]
+    nr_perts = [0, 1, 2]
+    magnitudes = ["0_001", "0_005", "0_008", "0_01", "0_05", "0_1"]
+
+    for pert_type in pert_types:
+        for algo in algos:
+            for nr_pert in nr_perts:
+                for magnitude in magnitudes:
+                    save_old_fashion_transfer_data_in_neptune(pert_type, algo, nr_pert, magnitude, games, main_path, case_name)
+
 
 # '''
 # New way for neptune usage

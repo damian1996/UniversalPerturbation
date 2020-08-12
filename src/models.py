@@ -296,7 +296,6 @@ tag: which tag to search
 local: boolean, whether to get the model from a local archive or from the remote server
 """
 def MakeAtariModel(algo,environment,run_no,tag='final',local=False):
-
     model_path,data_path,log_path = GetFilePathsForModel(algo,environment,run_no,tag,local)
 
     # if atari_zoo.config.debug:

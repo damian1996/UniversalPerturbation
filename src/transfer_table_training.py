@@ -40,9 +40,9 @@ def train_universal_perturbation_from_random_batches(model, to_be_perturbated=Fa
         if pert_for_next_epoch is not None:
             init_data = pert_for_next_epoch
         else:
-            init_data = get_random_gaussian_noise(noise_shape, seed)
+            init_data = rpg.get_random_gaussian_noise(noise_shape, seed, left_clip, right_clip)
         
-        init_data = rpg.get_random_gaussian_noise(noise_shape, seed)
+        #init_data = rpg.get_random_gaussian_noise(noise_shape, seed)
         universal_perturbation = tf.Variable(init_data, name='universal_perturbation')
         X_t = obs + universal_perturbation
 
@@ -84,8 +84,6 @@ def train_universal_perturbation_from_random_batches(model, to_be_perturbated=Fa
             if args.render: 
                 env.render()
             
-            #repeat_counter = 0
-            #while repeat_counter < n_repeats: 
             clean_obs, clean_act1 = rep_buffer.get_single_batch(dataset[0], dataset[1], None, 32)
             perturbated_obs_to_graph = (clean_obs + universal_perturbation.eval(session=sess))
             
@@ -102,15 +100,14 @@ def train_universal_perturbation_from_random_batches(model, to_be_perturbated=Fa
             clip_dict = {}
             sess.run([assign_op], feed_dict=clip_dict)
                 
-            #repeat_counter += 1
-
             if frame_count % rep_buffer.replay_after_batches == 0:
                 if last_update: break
                 
                 dataset, last_update = data_loader.get_updated_buffer(it) 
                 it += 1
-
-                results_to_log = perturbation_test.run_experiments_for_env(universal_perturbation.eval(), game, algo=algo)
+                
+                # print("Meantime test")
+                results_to_log = perturbation_test.run_experiments_for_env(universal_perturbation.eval(), game, algo=algo, meantime_test=True)
                 results_during_training.append(results_to_log)
 
                 print("Average perturbation", np.sum(universal_perturbation.eval()) / np.prod(noise_shape))
@@ -146,7 +143,7 @@ def train_universal_perturbation_from_full_dataset(model, to_be_perturbated=Fals
         if pert_for_next_epoch is not None:
             init_data = pert_for_next_epoch
         else:
-            init_data = get_random_gaussian_noise(noise_shape, seed)
+            init_data = rpg.get_random_gaussian_noise(noise_shape, seed, left_clip, right_clip)
             
         universal_perturbation = tf.Variable(init_data, name='universal_perturbation')
         X_t = obs + universal_perturbation
@@ -193,8 +190,6 @@ def train_universal_perturbation_from_full_dataset(model, to_be_perturbated=Fals
             clip_dict = {}
             sess.run([assign_op], feed_dict=clip_dict)
                 
-            #repeat_counter += 1
-
             if frame_count % after_nr_batches_print_results == 0:
                 results_to_log = perturbation_test.run_experiments_for_env(universal_perturbation.eval(), game)
                 results_during_training.append(results_to_log)

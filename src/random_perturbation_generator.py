@@ -1,4 +1,5 @@
 import numpy as np
+import tensorflow as tf
 
 noise_shape = (84, 84, 1)
 
@@ -26,10 +27,10 @@ def get_random_pert(max_noise, random_path, nr_pert, seed):
     s_max_noise = str(max_noise).replace('.', '_')
     return generate_random_perturbation(max_noise, seed)
 
-def get_random_gaussian_noise(shape, seed):
+def get_random_gaussian_noise(shape, seed, left_clip, right_clip):
     np.random.seed(seed)
     total = np.prod(shape)
     init_data = np.random.normal(left_clip, right_clip, total).reshape(shape)
-    return init_data.astype(np.float32)
-    # convert_np_to_tf = tf.convert_to_tensor(init_data, dtype=tf.float32)
-    # return convert_np_to_tf.eval()
+    #return init_data.astype(np.float32)
+    convert_np_to_tf = tf.convert_to_tensor(init_data, dtype=tf.float32)
+    return convert_np_to_tf.eval()

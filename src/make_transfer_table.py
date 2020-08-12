@@ -37,18 +37,6 @@ import produce_baselines as pb
 tf.compat.v1.enable_eager_execution()
 tf.test.gpu_device_name()
 
-# def get_random_pert(max_noise, random_path, nr_pert):
-#     s_max_noise = str(max_noise).replace('.', '_')
-#     if os.path.exists(f"{random_path}/pert_{s_max_noise}_{nr_pert}.npy"):
-#         print("Losowa perturbacja istnieje")
-#         rand_pert = np.load(f"{random_path}/pert_{s_max_noise}_{nr_pert}.npy")
-#     else:
-#         rand_pert = rpg.generate_random_perturbation(max_noise)
-#         # print("HAHAHAHA", f"{random_path}/pert_{s_max_noise}_{nr_pert}.npy")
-#         np.save(f"{random_path}/pert_{s_max_noise}_{nr_pert}.npy", rand_pert)        
-
-#     return rand_pert
-
 def get_saved_dir(given_algo):
     algos = ['rainbow', 'dqn', 'ga', 'es', 'impala', 'a2c']
 
@@ -62,64 +50,27 @@ def create_all_random_perts(max_noises, nr_different_perts_for_setup, log_path):
         for nr_pert in range(nr_different_perts_for_setup):
             print(nr_pert, max_noise)
             rand_pert = get_random_pert(max_noise, f"{log_path}/random/random_perts", nr_pert) 
-    
-def check_if_case_completed(path, all_exps_len=20):
-    max_noises = os.listdir(path)
-    print("BRRRRRRR") 
-    if len(max_noises) == 1 or (len(max_noises) == 2 and "0_008" in max_noises):
-        return False
-    
-    for max_noise in max_noises:
-        if ".py" in max_noise:
-            continue         
-        noise_path = f"{path}/{max_noise}"
-        print(noise_path)
 
-        if not os.path.exists(noise_path):
-            return False
-
-        experiments = os.listdir(noise_path)
-
-        if (len(experiments) < all_exps_len) or (len(experiments) > all_exps_len):
-            print("BRRRR ", path)
-            return False
-    
-    return True
-
-def clean_results_dirs_for_new_ones(normalized_results_path, all_results_path, pert_path, all_exps_len=20):
-    if os.path.exists(normalized_results_path):
-        results = os.listdir(normalized_results_path)
-        print("Normalized results len ", len(results))
-        if len(results) < all_exps_len:
-            shutil.rmtree(normalized_results_path)
-    
-    if os.path.exists(all_results_path):
-        results = os.listdir(all_results_path)
-        print("Results len ", len(results))
-        if len(results) < all_exps_len:
-            shutil.rmtree(all_results_path)
-    
-    if os.path.exists(pert_path):
-        shutil.rmtree(pert_path)
 
 def main(log_path, args, use_buffer=True):
     print(f"Log path: {log_path}")
-    max_noises = [0.005, 0.008, 0.01, 0.05, 0.1]
+    max_noises = [0.01] # [0.005, 0.008, 0.01, 0.05, 0.1]
     algos = ['rainbow', 'dqn', 'ga', 'es', 'impala', 'a2c']
     lr = 0.1
     repeats = 1
     nr_test_runs = 1
-    nr_different_perts_for_setup = 3
+    nr_different_perts_for_setup = 1 # 3
     batch_size = 128
     run_ids = [0,1,2,3]
-    
+    epochs = 3
+
     t_envs = [args.env]
     modes = [args.mode]
     algos = [args.algo]
 
     for algo in algos:
         print(f"Current algo: {algo}")
-        envs = utils.get_sampled_games()
+        envs = [args.env] #utils.get_sampled_games()
         random_policy_scores = pb.read_baselines_from_files("random", envs, algo)
         trained_policy_scores = pb.read_baselines_from_files("trained", envs, algo)
 
@@ -132,9 +83,6 @@ def main(log_path, args, use_buffer=True):
                 print(f"Game {game} {env} now")
 
                 for nr_pert in range(0, nr_different_perts_for_setup):
-                    #if check_if_case_completed(f"{log_path}/{mode}/{algo}/results/{capitalized_game}/{nr_pert}"):
-                    #   continue
-
                     for max_noise in max_noises:
                         s_m_n = str(max_noise).replace(".", "_")
                         utils.fix_path()
@@ -148,55 +96,42 @@ def main(log_path, args, use_buffer=True):
 
                             if (mode == "trained") and nr_epoch == 0:
                                 saved_trajectories = get_saved_dir(algo)
-                                data_loader = TrajectoriesLoader([env], algo, False, args.policy_for_training, 
+                                data_loader = TrajectoriesLoader([env], algo, False, args.policy_for_training, args.seed, 
                                     saved_trajectories=saved_trajectories)
 
                             s_max_noise = str(max_noise).replace(".", "_")
-                            normalized_results_path = f"{log_path}/{mode}/{algo}/normalized_results/{capitalized_game}/{nr_pert}/{s_max_noise}"
-                            all_results_path = f"{log_path}/{mode}/{algo}/results/{capitalized_game}/{nr_pert}/{s_max_noise}"
-                            pert_path = f"{log_path}/{mode}/{algo}/perts/{capitalized_game}/{nr_pert}/{s_max_noise}"
-
-                            # clean_results_dirs_for_new_ones(normalized_results_path, all_results_path, pert_path)
-
-                            utils.fix_path()
-                            if not os.path.exists(pert_path):
-                                if not os.path.exists(normalized_results_path):
-                                    os.mkdir(normalized_results_path)
-                                if not os.path.exists(all_results_path):
-                                    os.mkdir(all_results_path)            
-                                if mode == "trained" and not os.path.exists(pert_path):
-                                    os.mkdir(pert_path)
 
                             if mode == "trained":
-                                if os.path.exists(f"{pert_path}/pert.npy"): 
-                                    print("Pert already exists")
-                                    perturbation = np.load(f"{pert_path}/pert.npy")
-                                else:
-                                    print(f"Algorithm: {algo} Environment: {env} Run Id: {run_ids[2]} NrPert: {nr_pert} Noise max: {max_noise}")
-                                    m = MakeAtariModel(algo,env,run_ids[2],tag="final")()
+                                #if os.path.exists(f"{pert_path}/pert.npy"): 
+                                #    print("Pert already exists")
+                                #    perturbation = np.load(f"{pert_path}/pert.npy")
+                                #else:
                                 
-                                    if use_buffer:
-                                        (observations, actions, _), _ = data_loader.get_initial_buffer()
+                                print(f"Algorithm: {algo} Environment: {env} Run Id: {run_ids[2]} NrPert: {nr_pert} Noise max: {max_noise}")
+                                m = MakeAtariModel(algo,env,run_ids[2],tag="final")()
+                                
+                                if use_buffer:
+                                    (observations, actions, _), _ = data_loader.get_initial_buffer()
 
-                                        nr_batches = actions.shape[0] // batch_size
-                                        print("Number of random steps", actions.shape[0])
+                                    nr_batches = actions.shape[0] // batch_size
+                                    print("Number of random steps", actions.shape[0])
 
-                                        utils.fix_path()
+                                    utils.fix_path()
                                         
-                                        results_noise = train_perturbation.train_universal_perturbation_from_random_batches(m, 
-                                                max_frames=2500, min_frames=2500, dataset=(observations, actions, None), 
-                                                nr_batches=nr_batches, all_training_cases=data_loader.all_training_cases, 
-                                                max_noise=max_noise, algo=algo, rep_buffer=data_loader.rep_buffer, game=env, 
-                                                data_loader=data_loader, n_repeats=repeats, seed=args.seed, pert_for_next_epoch=current_pert)
-                                    else:
-                                        loader = FullDatasetLoader([env], batch_size, algo) 
-                                        results_noise = train_perturbation.train_universal_perturbation_from_full_dataset(m, 
-                                                max_frames=2500, min_frames=2500, max_noise=max_noise, algo=algo, game=env, 
-                                                loader=loader, n_repeats=repeats, seed=args.seed, pert_for_next_epoch=current_pert)
+                                    results_noise = train_perturbation.train_universal_perturbation_from_random_batches(m, 
+                                            max_frames=2500, min_frames=2500, dataset=(observations, actions, None), 
+                                            nr_batches=nr_batches, all_training_cases=data_loader.all_training_cases, 
+                                            max_noise=max_noise, algo=algo, rep_buffer=data_loader.rep_buffer, game=env, 
+                                            data_loader=data_loader, n_repeats=repeats, seed=args.seed, pert_for_next_epoch=current_pert)
+                                else:
+                                    loader = FullDatasetLoader([env], batch_size, algo) 
+                                    results_noise = train_perturbation.train_universal_perturbation_from_full_dataset(m, 
+                                            max_frames=2500, min_frames=2500, max_noise=max_noise, algo=algo, game=env, 
+                                            loader=loader, n_repeats=repeats, seed=args.seed, pert_for_next_epoch=current_pert)
                                 
-                                    perturbation = results_noise["perturbation"] 
-                                    open(f"{pert_path}/pert.npy", 'a').close()
-                                    np.save(open(f"{pert_path}/pert.npy", "wb"), perturbation)
+                                perturbation = results_noise["perturbation"] 
+                                #open(f"{pert_path}/pert.npy", 'a').close()
+                                #np.save(open(f"{pert_path}/pert.npy", "wb"), perturbation)
                             
                             elif mode == "random":
                                 print(f"{log_path}/random/random_perts")
@@ -207,7 +142,7 @@ def main(log_path, args, use_buffer=True):
                             
                             if mode == "trained" or mode == "random":
                                 current_pert = perturbation
-                                np.save(open(f"ten_perts/peturbation_{env}_{seed}_epoch_{nr_epoch}.npy", "wb"), current_pert)
+                                np.save(open(f"ten_perts/peturbation_{env}_{args.seed}_epoch_{nr_epoch}.npy", "wb"), current_pert)
 
                             for j, test_game in enumerate(envs):
                                 print(f"Tests for game: {test_game}")
@@ -227,8 +162,8 @@ def main(log_path, args, use_buffer=True):
                                     for kk, res in enumerate(results):
                                         mean_results[kk] += res
 
-                                print(f"{all_results_path}/{test_game}.npy")
-                                np.save(open(f"{all_results_path}/{test_game}.npy", "wb"), np.array(all_results))
+                                #print(f"{all_results_path}/{test_game}.npy")
+                                #np.save(open(f"{all_results_path}/{test_game}.npy", "wb"), np.array(all_results))
 
                         
 if __name__ == '__main__':
@@ -241,5 +176,6 @@ if __name__ == '__main__':
     args = parser.parse_args()
     print(args.env, args.algo, args.mode, args.policy_for_training, args.seed)
 
+    print("Seen ", args.env, args.seed)
     log_path = f"final_results_0_policy" #f"final_results"
     main(log_path, args)

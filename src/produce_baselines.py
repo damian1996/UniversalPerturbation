@@ -55,7 +55,7 @@ def read_baselines_from_files(baseline_type, games, algo):
 
     policy_scores = []
     for i, game in enumerate(games):
-        mean_score = np.load(f"all_baselines_from_uber/{baseline_type}/{game}_{algo}_policy_score.npy") 
+        mean_score = np.load(f"all_baselines_from_uber/{baseline_type}/{game}_{algo.lower()}_policy_score.npy") 
         #print("Mean score", mean_score)
         policy_scores.append(mean_score)
 

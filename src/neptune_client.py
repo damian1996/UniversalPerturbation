@@ -253,16 +253,28 @@ def save_old_fashion_transfer_data_in_neptune(pert_type, algo, nr_pert, magnitud
         results_per_game = []
         for test_game in all_games:
             test_game_path = f"{path}/{test_game.lower()}.npy"
-            result = np.load(test_game_path)
-            results_per_game.append(result)
-            # print(results_per_game)
+            
+            try:
+                result = np.load(test_game_path)
+                if (result.shape[0] == 1) and (result.shape[1] == 1):
+                    #print(result, result.shape)
+                    result = np.array([result[0][0], result[0][0], result[0][0]])
+                else:
+                    result = np.squeeze(result)
+
+                results_per_game.append(result)
+            except Exception:
+                #print(f"Exception {test_game_path}")
+                results_per_game.append(np.array([0., 0., 0.]))
+            
             all_c += 1
-        
+         
         results_per_game = np.squeeze(np.array(results_per_game))
         results.append(results_per_game)
     
     results = np.array(results)
-    save_transfer_data(results, None, pert_type, algo, nr_pert, magnitude, games, case_name)
+    
+    save_transfer_data(results, pert_type, algo, nr_pert, magnitude, games, case_name)
     # tutaj wrzuc do neptuna
 
 def save_transfer_data(data, pert_type, algo, nr_pert, magnitude, games, case_name):
@@ -286,7 +298,7 @@ def save_transfer_data(data, pert_type, algo, nr_pert, magnitude, games, case_na
     magnitude = f"magnitude_{magnitude}"
     case_name = f"special_tag_{case_name}"
     algo = f"algo_{algo}"
-    # neptune.append_tag(pert_type, algo, magnitude, nr_pert, case_name)
+    neptune.append_tag(pert_type, algo, magnitude, nr_pert, case_name)
 
 def save_perturbation(data, perts, pert_type, algo, nr_pert, magnitude, case_name):
     neptune.init('damian1996/SavedPerturbations', api_token="eyJhcGlfYWRkcmVzcyI6Imh0dHBzOi8vdWkubmVwdHVuZS5haSIsImFwaV91cmwiOiJodHRwczovL3VpLm5lcHR1bmUuYWkiLCJhcGlfa2V5IjoiY2I0NDZhMDktODgyNC00ZjlmLWJhMTktOGNlY2IwODMwMjJhIn0=")
@@ -303,7 +315,7 @@ def save_perturbation(data, perts, pert_type, algo, nr_pert, magnitude, case_nam
     magnitude = f"magnitude_{magnitude}"
     case_name = f"special_tag_{case_name}"
     algo = f"algo_{algo}"
-    # neptune.append_tag(pert_type, algo, magnitude, nr_pert, case_name)
+    neptune.append_tag(pert_type, algo, magnitude, nr_pert, case_name)
 
 def get_perturbations(algo, mode, nr_pert, max_noise, special_label_for_neptun):
     api_token = os.environ['NEPTUNE_API_TOKEN']
@@ -339,8 +351,8 @@ def get_transfer_data(algo, mode, nr_pert, max_noise, special_label_for_neptun):
 
 
 if __name__ == '__main__':
-    main_path = "final_results"
-    case_name = main_path
+    main_path = "../../perts_backup/final_results" #"final_results"
+    case_name = "final_results"
     pert_types = ["trained", "random"]
     algos = ["rainbow", "dqn", "ga", "es", "a2c"]
     games = [

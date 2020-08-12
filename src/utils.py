@@ -255,8 +255,8 @@ def sample_unique_games_for_algo(algo, N):
     indices = np.array(random.sample(range(0, len(games)), N))
     return np.array(games)[indices].tolist()
 
-def get_best_policies_id_per_game(envs):
-    return {envs[i]: 2 for i in range(len(envs))}
+def get_best_policies_id_per_game(envs, nr_policy):
+    return {envs[i]: nr_policy for i in range(len(envs))}
 
 def obs_plus_rand_pert():
     max_noise = 0.00001

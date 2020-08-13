@@ -128,13 +128,13 @@ def get_epsilons_for_explorations(sizes):
 class TrajectoriesLoader():
 
     def __init__(self, envs, algo, multi_game, nr_policy, seed, batch_size, trajectories_at_once, 
-        nr_new_trajectories, replay_after_batches, saved_trajectories = "./saved_trajectories"):
+        nr_new_trajectories, replay_after_batches, nr_of_all_trajectories, saved_trajectories = "./saved_trajectories"):
         
         self.rep_buffer = ReplayBuffer(envs, nr_policy, seed, batch_size, trajectories_at_once,
             nr_new_trajectories, replay_after_batches, multi_game=multi_game)
         
         self.saved_trajectories = saved_trajectories
-        self.epsilons = get_epsilons_for_explorations((60, 9))
+        self.epsilons = get_epsilons_for_explorations(nr_of_all_trajectories)
         self.all_training_cases = np.array([(game, eps) for eps in self.epsilons for game in envs])
         print(self.epsilons)
 

@@ -53,9 +53,12 @@ def train_universal_perturbation_from_random_batches(model, to_be_perturbated=Fa
         activations = [T(layer['name']) for layer in m.layers]
         high_level_rep = activations[-2]
 
-        clean_act = tf.placeholder(tf.int32, [None], name="action")
+        #clean_act = tf.placeholder(tf.int32, [None], name="action")
 
-        loss = -tf.losses.sparse_softmax_cross_entropy(labels=clean_act, logits=policy)
+        #loss = -tf.losses.sparse_softmax_cross_entropy(labels=clean_act, logits=policy)
+        
+        probs = tf.nn.softmax(policy)
+        loss = tf.reduce_sum(probs * tf.log(probs))
         train_op = tf.compat.v1.train.AdamOptimizer(0.001).minimize(loss)
         
         clip_val = tf.clip_by_value(universal_perturbation, clip_value_min=left, clip_value_max=right)
@@ -87,11 +90,13 @@ def train_universal_perturbation_from_random_batches(model, to_be_perturbated=Fa
             clean_obs, clean_act1 = rep_buffer.get_single_batch(dataset[0], dataset[1], None, 32)
             perturbated_obs_to_graph = (clean_obs + universal_perturbation.eval(session=sess))
             
-            train_dict = {X_t: perturbated_obs_to_graph, clean_act: tuple(clean_act1), obs: clean_obs}
+            #train_dict = {X_t: perturbated_obs_to_graph, clean_act: tuple(clean_act1), obs: clean_obs}
+            train_dict = {X_t: perturbated_obs_to_graph, obs: clean_obs}
  
-            _, l1 = sess.run([train_op, loss], feed_dict=train_dict)
+            _, l1, probs1 = sess.run([train_op, loss, probs], feed_dict=train_dict)
             
             all_losses.append(l1)
+            print(f"New loss {l1} and probs {probs1.shape}") 
 
             if frame_count % 100 == 0:
                 print("timecheck", frame_count) 
@@ -182,7 +187,7 @@ def train_universal_perturbation_from_full_dataset(model, to_be_perturbated=Fals
             perturbated_obs_to_graph = (clean_obs + universal_perturbation.eval(session=sess))
             
             train_dict = {X_t: perturbated_obs_to_graph, clean_act: tuple(clean_act1), obs: clean_obs}
- 
+            
             _, l1 = sess.run([train_op, loss], feed_dict=train_dict)
             
             all_losses.append(l1)

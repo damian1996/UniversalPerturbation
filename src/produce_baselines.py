@@ -49,10 +49,12 @@ def produce_baselines_from_uber(baseline_type, random_act, games=None):
 def read_baselines_from_files(baseline_type, games, algo):
     # utils.fix_path()
     initial_path = os.getcwd()
+    print(initial_path)
     if "src" not in initial_path:
         new_path = fix_path_for_baselines()
         os.chdir(new_path)
 
+    print(os.getcwd())
     policy_scores = []
     for i, game in enumerate(games):
         mean_score = np.load(f"all_baselines_from_uber/{baseline_type}/{game}_{algo.lower()}_policy_score.npy") 

@@ -52,8 +52,10 @@ def create_all_random_perts(max_noises, nr_different_perts_for_setup, log_path):
             rand_pert = get_random_pert(max_noise, f"{log_path}/random/random_perts", nr_pert) 
 
 
-def main(log_path, args, use_buffer=True):
+def main(log_path, args, use_buffer=True): 
     print(f"Log path: {log_path}")
+    utils.fix_path()
+    
     max_noises = [0.01] # [0.005, 0.008, 0.01, 0.05, 0.1]
     algos = ['rainbow', 'dqn', 'ga', 'es', 'impala', 'a2c']
     lr = 0.1
@@ -71,6 +73,7 @@ def main(log_path, args, use_buffer=True):
     for algo in algos:
         print(f"Current algo: {algo}")
         envs = [args.env] #utils.get_sampled_games()
+        
         random_policy_scores = pb.read_baselines_from_files("random", envs, algo)
         trained_policy_scores = pb.read_baselines_from_files("trained", envs, algo)
 

@@ -22,7 +22,7 @@ from atari_zoo.atari_wrappers import FireResetEnv, NoopResetEnv, MaxAndSkipEnv,W
 
 from models import MakeAtariModel
 import generate_rollout
-import transfer_table_training as train_perturbation
+import train
 import actions_and_obs_provider
 
 import perturbation_test
@@ -83,8 +83,11 @@ def main(log_path, args, use_buffer=True):
 
         if (mode == "trained") and nr_epoch == 0:
             saved_trajectories = get_saved_dir(algo)
-            data_loader = TrajectoriesLoader([env], algo, False, args.policy_for_training, args.seed, 
-                saved_trajectories=saved_trajectories)
+            data_loader = TrajectoriesLoader(
+                [env], algo, False, args.policy_for_training, args.seed, 
+                args.batch_size, args.trajectories_at_once, args.nr_new_trajectories, 
+                args.replay_after_batches, saved_trajectories=saved_trajectories
+            )
 
         if mode == "trained":
             print(f"Algorithm: {algo} Environment: {env} Run Id: {run_ids[2]} NrPert: {nr_pert} Noise max: {magnitude}")
@@ -98,14 +101,14 @@ def main(log_path, args, use_buffer=True):
 
                 utils.fix_path()
                                         
-                results_noise = train_perturbation.train_universal_perturbation_from_random_batches(m, 
+                results_noise = train.train_universal_perturbation_from_random_batches(m, 
                     max_frames=2500, min_frames=2500, dataset=(observations, actions, None), 
                     nr_batches=nr_batches, all_training_cases=data_loader.all_training_cases, 
                     max_noise=magnitude, algo=algo, rep_buffer=data_loader.rep_buffer, game=env, 
                     data_loader=data_loader, n_repeats=args.repeats, seed=args.seed, pert_for_next_epoch=current_pert)
             else:
                 loader = FullDatasetLoader([env], args.batch_size, algo) 
-                results_noise = train_perturbation.train_universal_perturbation_from_full_dataset(m, 
+                results_noise = train.train_universal_perturbation_from_full_dataset(m, 
                         max_frames=2500, min_frames=2500, max_noise=magnitude, algo=algo, game=env, 
                         loader=loader, n_repeats=args.repeats, seed=args.seed, pert_for_next_epoch=current_pert)
             
@@ -149,7 +152,10 @@ if __name__ == '__main__':
     parser.add_argument("--batch_size", type=int, default=128)
     parser.add_argument("--nr_different_perts_for_setup", type=int, default=1)
     parser.add_argument("--repeats", type=int, default=1)
-
+    parser.add_argument("--trajectories_at_once", type=int, default=20)
+    parser.add_argument("--nr_new_trajectories", type=int, default=5)
+    parser.add_argument("--replay_after_batches", type=int, default=120)
+            
     args = parser.parse_args()
     print(args.env, args.algo, args.mode, args.policy_for_training, args.seed, args.magnitude)
 

@@ -87,7 +87,7 @@ def train_universal_perturbation_from_random_batches(model, to_be_perturbated=Fa
             if args.render: 
                 env.render()
             
-            clean_obs, clean_act1 = rep_buffer.get_single_batch(dataset[0], dataset[1], None, 32)
+            clean_obs, clean_act1 = rep_buffer.get_single_batch(dataset[0], dataset[1], None)
             perturbated_obs_to_graph = (clean_obs + universal_perturbation.eval(session=sess))
             
             #train_dict = {X_t: perturbated_obs_to_graph, clean_act: tuple(clean_act1), obs: clean_obs}

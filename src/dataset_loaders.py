@@ -9,10 +9,13 @@ import actions_and_obs_provider
 
 class ReplayBuffer:
 
-    def __init__(self, envs, nr_policy, seed, multi_game=False):
-        self.trajectories_at_once = 20
-        self.nr_new_trajectories = 5
-        self.replay_after_batches = 120
+    def __init__(self, envs, nr_policy, seed, batch_size, trajectories_at_once, 
+        nr_new_trajectories, replay_after_batches, multi_game=False):
+        
+        self.trajectories_at_once = trajectories_at_once
+        self.nr_new_trajectories = nr_new_trajectories
+        self.replay_after_batches = replay_after_batches
+        self.batch_size = batch_size
 
         self.cnt_trajectories = self.trajectories_at_once
         self.rng = default_rng(seed)
@@ -65,8 +68,8 @@ class ReplayBuffer:
 
         return observations, actions, game_labels
    
-    def get_single_batch(self, observations, actions, labels, batch_size): 
-        numbers = self.rng.choice(actions.shape[0], size=batch_size, replace=False)
+    def get_single_batch(self, observations, actions, labels): 
+        numbers = self.rng.choice(actions.shape[0], size=self.batch_size, replace=False)
 
         if labels is None:
             return observations[numbers], actions[numbers]
@@ -124,10 +127,13 @@ def get_epsilons_for_explorations(sizes):
 
 class TrajectoriesLoader():
 
-    def __init__(self, envs, algo, multi_game, nr_policy, seed, saved_trajectories = "./saved_trajectories"):
-        self.rep_buffer = ReplayBuffer(envs, nr_policy, seed, multi_game=multi_game)
+    def __init__(self, envs, algo, multi_game, nr_policy, seed, batch_size, trajectories_at_once, 
+        nr_new_trajectories, replay_after_batches, saved_trajectories = "./saved_trajectories"):
+        
+        self.rep_buffer = ReplayBuffer(envs, nr_policy, seed, batch_size, trajectories_at_once,
+            nr_new_trajectories, replay_after_batches, multi_game=multi_game)
+        
         self.saved_trajectories = saved_trajectories
-
         self.epsilons = get_epsilons_for_explorations((60, 9))
         self.all_training_cases = np.array([(game, eps) for eps in self.epsilons for game in envs])
         print(self.epsilons)

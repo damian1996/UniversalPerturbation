@@ -3,7 +3,6 @@ import sys
 import os
 
 import transfer_plots as t_plots
-import pert_results_plots as p_plots
 import utils
 
 

@@ -23,12 +23,12 @@ class ReplayBuffer:
         self.d_games = {env: i for i, env in enumerate(envs)}
 
         self.best_policies_id = utils.get_best_policies_id_per_game(envs, nr_policy) 
-        print("ONE BEST POLICY TO RULE THEM ALL", self.best_policies_id)
+        #print("ONE BEST POLICY TO RULE THEM ALL", self.best_policies_id)
 
     def generate_trajectories_for_given_cases(self, initial_cases, algo):
-        print(initial_cases)
+        #print(initial_cases)
         
-        print(self.cnt_trajectories, "CNT TRAJECTORIES")
+        #print(self.cnt_trajectories, "CNT TRAJECTORIES")
         l_actions, l_observations, l_game_labels = [], [], []
 
         for i, (env, eps) in enumerate(initial_cases): 
@@ -86,7 +86,7 @@ class ReplayBuffer:
     def generate_new_batches(self, all_training_cases, dataset_size, old_dataset, algo, temp_dataset=None):
         is_last_change = True
         
-        print(all_training_cases)
+        #print(all_training_cases)
         if self.cnt_trajectories < len(all_training_cases):
             is_last_change = False
             new_cases = all_training_cases[self.cnt_trajectories: min(
@@ -136,7 +136,7 @@ class TrajectoriesLoader():
         self.saved_trajectories = saved_trajectories
         self.epsilons = get_epsilons_for_explorations(nr_of_all_trajectories)
         self.all_training_cases = np.array([(game, eps) for eps in self.epsilons for game in envs])
-        print(self.epsilons)
+        #print(self.epsilons)
 
         np.random.shuffle(self.all_training_cases)
 
@@ -193,11 +193,11 @@ class FullDatasetLoader():
 
         self.d_games = {env: i for i, env in enumerate(envs)}
         self.best_policies_id = utils.get_best_policies_id_per_game(envs) 
-        print("ONE BEST POLICY TO RULE THEM ALL", self.best_policies_id)
+        #print("ONE BEST POLICY TO RULE THEM ALL", self.best_policies_id)
 
         self.observations, self.actions = self.generate_initial_dataset(algo)
         self.nr_batches = self.actions.shape[0] // self.batch_size
-        print("Number of random steps", self.actions.shape[0])
+        #print("Number of random steps", self.actions.shape[0])
 
         self.batch_cnt = 0
                                     

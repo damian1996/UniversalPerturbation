@@ -50,7 +50,7 @@ def dataset_size(s):
 
 
 def main(log_path, args, use_buffer=True): 
-    print(f"Log path: {log_path}")
+    #print(f"Log path: {log_path}")
     utils.fix_path()
     
     # magnitudes = [0.005, 0.008, 0.01, 0.05, 0.1]
@@ -64,17 +64,12 @@ def main(log_path, args, use_buffer=True):
     envs = [args.env] #utils.get_sampled_games()
     magnitude = args.magnitude
 
-    print(f"Current algo: {algo}")
-    
     random_policy_scores = pb.read_baselines_from_files("random", envs, algo)
     trained_policy_scores = pb.read_baselines_from_files("trained", envs, algo)
     
-    print(f"Current mode: {mode}")
-            
     env = f"{game[0].capitalize()}{game[1:]}NoFrameskip-v4"
     capitalized_game = game
     game = game.lower()
-    print(f"Game {game} {env} now")
     
     nr_pert = 0
     s_magnitude = str(magnitude).replace(".", "_")
@@ -103,14 +98,14 @@ def main(log_path, args, use_buffer=True):
                 (observations, actions, _), _ = data_loader.get_initial_buffer()
 
                 nr_batches = actions.shape[0] // args.batch_size
-                print("Number of random steps", actions.shape[0])
+                #print("Number of random steps", actions.shape[0])
 
                 utils.fix_path()
                                         
                 results_noise = train.train_universal_perturbation_from_random_batches(m, 
                     max_frames=2500, min_frames=2500, dataset=(observations, actions, None), 
                     nr_batches=nr_batches, all_training_cases=data_loader.all_training_cases, 
-                    max_noise=magnitude, algo=algo, rep_buffer=data_loader.rep_buffer, game=env, 
+                    max_noise=magnitude, algo=algo, rep_buffer=data_loader.rep_buffer, game=env, batch_size=args.batch_size,
                     data_loader=data_loader, n_repeats=args.repeats, seed=args.seed, pert_for_next_epoch=current_pert)
             else:
                 loader = FullDatasetLoader([env], args.batch_size, algo) 
@@ -154,19 +149,26 @@ if __name__ == '__main__':
     parser.add_argument("--policy_for_training", type=int, default=2)
     parser.add_argument("--seed", type=int, default=11)
     parser.add_argument("--magnitude", type=float, default=0.01)
-    parser.add_argument("--epochs", type=int, default=3)
+    parser.add_argument("--epochs", type=int, default=1)
     parser.add_argument("--batch_size", type=int, default=128)
     parser.add_argument("--nr_different_perts_for_setup", type=int, default=1)
     parser.add_argument("--repeats", type=int, default=1)
-    parser.add_argument("--trajectories_at_once", type=int, default=2) # 20
-    parser.add_argument("--nr_new_trajectories", type=int, default=1) # 5
-    parser.add_argument("--replay_after_batches", type=int, default=100) # 120
-    parser.add_argument("--nr_of_all_trajectories", type=dataset_size, nargs=1, default=[(4,2)])
+    parser.add_argument("--lr", type=float, default=0.001)
+    parser.add_argument("--trajectories_at_once", type=int, default=20) # 20
+    parser.add_argument("--nr_new_trajectories", type=int, default=5) # 5
+    parser.add_argument("--replay_after_batches", type=int, default=120) # 120
+    parser.add_argument("--nr_of_all_trajectories", type=dataset_size, nargs=1, default=[(60, 9)]) # (60, 9)
 
     args = parser.parse_args()
     args.nr_of_all_trajectories = args.nr_of_all_trajectories[0]
+    
+    learning_rates = [0.001]
 
-    print(args.env, args.algo, args.mode, args.policy_for_training, args.seed, args.magnitude)
-    print("Seen ", args.env, args.seed)
-    log_path = f"final_results_0_policy" #f"final_results"
-    main(log_path, args)
+    for lr in learning_rates:
+        args.lr = lr
+
+        #print(args.env, args.algo, args.mode, args.policy_for_training, args.seed, args.magnitude)
+        #print("Seen ", args.env, args.seed)
+        print(f"Now lr: {lr}")
+        log_path = f"final_results_0_policy" #f"final_results"
+        main(log_path, args)

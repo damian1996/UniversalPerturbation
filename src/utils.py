@@ -379,6 +379,11 @@ def make_video_for_game(env, game, algo, noise_percent=0.0, fps=60.0, skip=1, pt
 
         print("Video created!")
 
+def log2(x):
+  numerator = tf.log(x)
+  denominator = tf.log(tf.constant(2, dtype=numerator.dtype))
+  return numerator / denominator
+
 
 if __name__ == "__main__":
     print(sample_unique_games_for_algo("rainbow", 20))

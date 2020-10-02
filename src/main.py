@@ -153,22 +153,17 @@ if __name__ == '__main__':
     parser.add_argument("--batch_size", type=int, default=128)
     parser.add_argument("--nr_different_perts_for_setup", type=int, default=1)
     parser.add_argument("--repeats", type=int, default=1)
-    parser.add_argument("--lr", type=float, default=0.001)
+    parser.add_argument("--lr", type=float, default=0.0001)
     parser.add_argument("--trajectories_at_once", type=int, default=20) # 20
     parser.add_argument("--nr_new_trajectories", type=int, default=5) # 5
     parser.add_argument("--replay_after_batches", type=int, default=120) # 120
     parser.add_argument("--nr_of_all_trajectories", type=dataset_size, nargs=1, default=[(60, 9)]) # (60, 9)
-
+    
     args = parser.parse_args()
     args.nr_of_all_trajectories = args.nr_of_all_trajectories[0]
     
-    learning_rates = [0.001]
-
-    for lr in learning_rates:
-        args.lr = lr
-
-        #print(args.env, args.algo, args.mode, args.policy_for_training, args.seed, args.magnitude)
-        #print("Seen ", args.env, args.seed)
-        print(f"Now lr: {lr}")
-        log_path = f"final_results_0_policy" #f"final_results"
-        main(log_path, args)
+    #print(args.env, args.algo, args.mode, args.policy_for_training, args.seed, args.magnitude)
+    #print("Seen ", args.env, args.seed)
+    print(f"Now lr: {args.lr}")
+    log_path = f"final_results_0_policy" #f"final_results"
+    main(log_path, args)

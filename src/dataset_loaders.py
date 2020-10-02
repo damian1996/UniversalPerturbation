@@ -57,24 +57,28 @@ class ReplayBuffer:
     def generate_initial_dataset(self, all_training_cases, algo):
         initial_cases = all_training_cases[:min(self.trajectories_at_once, len(all_training_cases))]
         observations, actions, game_labels = self.generate_trajectories_for_given_cases(initial_cases, algo)
-         
+        
+        '''
         indices = np.random.permutation(actions.shape[0])
         actions = actions[indices]
         observations = observations[indices]
         #if not self.multi_game:
         #    return observations, actions
-         
+        
         game_labels = game_labels[indices]         
+        '''
 
         return observations, actions, game_labels
    
-    def get_single_batch(self, observations, actions, labels): 
+    def get_single_batch(self, observations, actions, labels, ii): 
         numbers = self.rng.choice(actions.shape[0], size=self.batch_size, replace=False)
 
         if labels is None:
             return observations[numbers], actions[numbers]
         
-        return observations[numbers], actions[numbers], labels[numbers]  
+        return self.observations[ii * self.batch_size: (ii+1) * self.batch_size], self.actions[ii* self.batch_size: (ii+1) * self.batch_size]
+
+        # return observations[numbers], actions[numbers], labels[numbers]  
     
     def update_counter(self):
         self.cnt_trajectories += self.nr_new_trajectories
@@ -233,11 +237,13 @@ class FullDatasetLoader():
     def generate_initial_dataset(self, algo):
         all_training_cases = self.generate_training_cases(self.envs)
         observations, actions, game_labels = self.generate_trajectories_for_given_cases(all_training_cases, algo)
-         
+        
+        '''
         indices = np.random.permutation(actions.shape[0])
         actions = actions[indices]
         observations = observations[indices]
-         
+        '''
+
         # game_labels = game_labels[indices]         
 
         return observations, actions #, game_labels
@@ -245,8 +251,9 @@ class FullDatasetLoader():
     def is_batch_pool_exhausted(self):
         return not (self.batch_cnt < self.nr_batches)
    
-    def get_single_batch(self):
+    def get_single_batch(self, ii):
         self.batch_cnt += 1
         numbers = self.rng.choice(self.actions.shape[0], size=self.batch_size, replace=False)
- 
-        return self.observations[numbers], self.actions[numbers] #labels[numbers]
+        return self.observations[ii * self.batch_size: (ii+1) * self.batch_size], self.actions[ii* self.batch_size: (ii+1) * self.batch_size]
+
+        #return self.observations[numbers], self.actions[numbers] #labels[numbers]

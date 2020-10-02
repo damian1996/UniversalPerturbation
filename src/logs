@@ -1,0 +1,1530 @@
+Now lr: 0.0001
+/home/dstachura/UniversalPerturbation/src
+/home/dstachura/UniversalPerturbation/src
+[array([-19., -20., -20.])]
+/home/dstachura/UniversalPerturbation/src
+/home/dstachura/UniversalPerturbation/src
+[array([21., 21., 21.])]
+NR EPOCH 0
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.03050847457627119
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1741, 84, 84, 4) (1741,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.0711864406779661
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1999, 84, 84, 4) (1999,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.15
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (2245, 84, 84, 4) (2245,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.07288135593220339
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (2379, 84, 84, 4) (2379,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.14375
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (2500, 84, 84, 4) (2500,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.06101694915254238
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1783, 84, 84, 4) (1783,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.05084745762711865
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1719, 84, 84, 4) (1719,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.08135593220338984
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1771, 84, 84, 4) (1771,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.01864406779661017
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1632, 84, 84, 4) (1632,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.1
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (2215, 84, 84, 4) (2215,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.09661016949152543
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (2190, 84, 84, 4) (2190,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.011864406779661017
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1663, 84, 84, 4) (1663,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.06440677966101696
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1930, 84, 84, 4) (1930,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.05932203389830509
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1806, 84, 84, 4) (1806,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.1375
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (2095, 84, 84, 4) (2095,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.1125
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (2007, 84, 84, 4) (2007,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.057627118644067804
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1743, 84, 84, 4) (1743,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.028813559322033902
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1849, 84, 84, 4) (1849,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.06271186440677967
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1694, 84, 84, 4) (1694,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.04067796610169492
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1952, 84, 84, 4) (1952,)
+Iteration 1
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.06779661016949154
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1947, 84, 84, 4) (1947,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.03559322033898305
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1786, 84, 84, 4) (1786,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.05254237288135594
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1891, 84, 84, 4) (1891,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.016949152542372885
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1632, 84, 84, 4) (1632,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.0
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1632, 84, 84, 4) (1632,)
+Iteration 2
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.13125
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (2266, 84, 84, 4) (2266,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.027118644067796613
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1806, 84, 84, 4) (1806,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.09322033898305086
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (2469, 84, 84, 4) (2469,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.025423728813559324
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1761, 84, 84, 4) (1761,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.09491525423728814
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (2241, 84, 84, 4) (2241,)
+Iteration 3
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.04237288135593221
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1771, 84, 84, 4) (1771,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.125
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (2296, 84, 84, 4) (2296,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.006779661016949153
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1632, 84, 84, 4) (1632,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.0440677966101695
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1746, 84, 84, 4) (1746,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.04745762711864407
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1790, 84, 84, 4) (1790,)
+Iteration 4
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.09152542372881357
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (2048, 84, 84, 4) (2048,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.008474576271186442
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1755, 84, 84, 4) (1755,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.04915254237288136
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1711, 84, 84, 4) (1711,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.088135593220339
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1972, 84, 84, 4) (1972,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.055932203389830515
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1876, 84, 84, 4) (1876,)
+Iteration 5
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.08474576271186442
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (2018, 84, 84, 4) (2018,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.0016949152542372883
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1632, 84, 84, 4) (1632,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.06610169491525425
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (2235, 84, 84, 4) (2235,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.07457627118644068
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1896, 84, 84, 4) (1896,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.02203389830508475
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1632, 84, 84, 4) (1632,)
+Iteration 6
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.03220338983050848
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1849, 84, 84, 4) (1849,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.08983050847457628
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (2120, 84, 84, 4) (2120,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.09830508474576272
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (2138, 84, 84, 4) (2138,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.013559322033898306
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1688, 84, 84, 4) (1688,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.01016949152542373
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1633, 84, 84, 4) (1633,)
+Iteration 7
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.06949152542372881
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (2478, 84, 84, 4) (2478,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.03728813559322034
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1650, 84, 84, 4) (1650,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.07966101694915255
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1686, 84, 84, 4) (1686,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.03389830508474577
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1845, 84, 84, 4) (1845,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.02033898305084746
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1632, 84, 84, 4) (1632,)
+Iteration 8
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.054237288135593226
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (2010, 84, 84, 4) (2010,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.0033898305084745766
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1632, 84, 84, 4) (1632,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.04576271186440679
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1919, 84, 84, 4) (1919,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.015254237288135596
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1633, 84, 84, 4) (1633,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.11875
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (2153, 84, 84, 4) (2153,)
+Iteration 9
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.08305084745762713
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1936, 84, 84, 4) (1936,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.10625000000000001
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (2150, 84, 84, 4) (2150,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.07796610169491526
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1972, 84, 84, 4) (1972,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.03898305084745763
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1649, 84, 84, 4) (1649,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.07627118644067797
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1920, 84, 84, 4) (1920,)
+Iteration 10
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.023728813559322035
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1633, 84, 84, 4) (1633,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.0864406779661017
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1919, 84, 84, 4) (1919,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.005084745762711865
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1632, 84, 84, 4) (1632,)
+Iteration 11
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 NrPert: 0 Noise max: 0.01
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Logits loss 2.577775478363037
+[0.16673113 0.16728999 0.16624822 0.16582353 0.16761479 0.16629238]
+Logits loss 2.5782854557037354
+[0.16642588 0.16756272 0.16616987 0.16704272 0.16682842 0.16597037]
+Logits loss 2.566652774810791
+[0.16322151 0.17775978 0.16662796 0.16355185 0.16405939 0.16477954]
+Logits loss 2.5394208431243896
+[0.18512268 0.18688853 0.18227214 0.12229719 0.1823867  0.14103281]
+Logits loss 2.507725715637207
+[0.18756047 0.16873091 0.1617664  0.15160565 0.17809008 0.1522465 ]
+Logits loss 2.4478230476379395
+[0.21930476 0.22003171 0.22316238 0.05664876 0.213581   0.06727134]
+Logits loss 2.356912136077881
+[0.12741533 0.15618907 0.27466676 0.07402843 0.2929398  0.07476062]
+Logits loss 2.2950031757354736
+[0.07991493 0.08494696 0.3263107  0.07182378 0.36778447 0.06921912]
+Logits loss 2.1970512866973877
+[0.15488838 0.16223796 0.27499032 0.06688154 0.26185003 0.07915184]
+Logits loss 2.0971219539642334
+[0.18105823 0.17923255 0.21605793 0.09310696 0.21222007 0.11832427]
+Logits loss 2.0032005310058594
+[0.06069942 0.10670717 0.35690072 0.02954667 0.41256812 0.03357804]
+Logits loss 1.9204354286193848
+[0.0423404  0.04275739 0.42109677 0.0422416  0.4114491  0.04011479]
+Logits loss 1.8998147249221802
+[0.12091928 0.15482599 0.32958156 0.03246763 0.32444197 0.0377636 ]
+Logits loss 1.7809076309204102
+[0.042456   0.21522336 0.32837504 0.02993028 0.35431942 0.02969584]
+Logits loss 1.748573660850525
+[0.03135026 0.02882002 0.4414167  0.0282972  0.4408717  0.02924415]
+Logits loss 1.6721285581588745
+[0.05365015 0.08423027 0.40599132 0.03067083 0.39423475 0.03122271]
+Logits loss 1.650158166885376
+[0.02904724 0.02771295 0.45097777 0.02667693 0.43775603 0.02782901]
+Logits loss 1.6351585388183594
+[0.03917494 0.02533647 0.3459268  0.15869209 0.32070598 0.1101637 ]
+Logits loss 1.5725175142288208
+[0.04071366 0.04620716 0.40707424 0.02748053 0.44696188 0.03156256]
+Logits loss 1.5900970697402954
+[0.14819492 0.19084722 0.1309681  0.2889514  0.15276201 0.08827637]
+Logits loss 1.550632119178772
+[0.0271288  0.02467404 0.45468557 0.02521462 0.44162074 0.0266762 ]
+Logits loss 1.5260965824127197
+[0.02148794 0.02100301 0.4539331  0.02294051 0.45288792 0.02774755]
+Logits loss 1.5305761098861694
+[0.02297981 0.02140646 0.43587825 0.02161994 0.47527587 0.0228397 ]
+Logits loss 1.5021309852600098
+[0.02667889 0.02213212 0.43785366 0.02033248 0.47022763 0.02277526]
+Logits loss 1.4942810535430908
+[0.01887523 0.01738493 0.45528477 0.0184504  0.47063228 0.01937244]
+Logits loss 1.5000309944152832
+[0.01845446 0.01725777 0.4853158  0.01712485 0.4437494  0.01809776]
+Logits loss 1.5045011043548584
+[0.01863766 0.01568801 0.4479043  0.01694629 0.481769   0.01905478]
+Logits loss 1.4755663871765137
+[0.01784851 0.01666739 0.46074134 0.01763926 0.4687443  0.01835918]
+Logits loss 1.489892601966858
+[0.01908552 0.01829291 0.4693226  0.01841621 0.45559835 0.01928443]
+Logits loss 1.478736400604248
+[0.01655641 0.01408849 0.46654242 0.01442311 0.4721025  0.01628701]
+Logits loss 1.4671063423156738
+[0.01824178 0.01668183 0.44306275 0.01575323 0.48911878 0.01714166]
+Logits loss 1.4547874927520752
+[0.01592268 0.01364037 0.47188377 0.01431021 0.46832252 0.01592047]
+Logits loss 1.455963373184204
+[0.01810649 0.0174755  0.46044508 0.01693845 0.46928313 0.01775128]
+Logits loss 1.4546420574188232
+[0.01674135 0.01609921 0.4448089  0.01526473 0.4898117  0.01727416]
+Logits loss 1.4352474212646484
+[0.01514663 0.01321913 0.47529393 0.01311336 0.46798047 0.0152465 ]
+Logits loss 1.4567272663116455
+[0.01754957 0.01558129 0.448328   0.01786236 0.4817591  0.01891963]
+Logits loss 1.4494845867156982
+[0.0262086  0.0243813  0.45631936 0.02261812 0.44605592 0.02441671]
+Logits loss 1.4331419467926025
+[0.01686407 0.01549404 0.4589001  0.01619725 0.47536173 0.01718272]
+Logits loss 1.4178814888000488
+[0.01683659 0.01601154 0.48028088 0.01464931 0.45615944 0.01606217]
+Logits loss 1.4161186218261719
+[0.01780613 0.01757186 0.44280726 0.01745384 0.4856814  0.01867944]
+Logits loss 1.4247806072235107
+[0.01572367 0.01369103 0.4677014  0.01417805 0.4743255  0.01438023]
+Logits loss 1.424860954284668
+[0.01385288 0.01261232 0.4743222  0.01211754 0.47348592 0.0136091 ]
+Logits loss 1.428354024887085
+[0.01650739 0.01540216 0.4724886  0.01516333 0.4639086  0.01652989]
+Logits loss 1.414400577545166
+[0.01415544 0.01308461 0.46564612 0.01305529 0.47958097 0.01447758]
+Logits loss 1.4203062057495117
+[0.01514561 0.01425133 0.4767654  0.01426834 0.4649214  0.01464796]
+Logits loss 1.4016258716583252
+[0.01346049 0.01238146 0.44890675 0.01282366 0.498428   0.01399961]
+Logits loss 1.4101558923721313
+[0.01498934 0.01345906 0.46873054 0.01380104 0.47402343 0.0149965 ]
+Logits loss 1.4063842296600342
+[0.01242781 0.01167731 0.4541827  0.01144142 0.4974943  0.01277645]
+Logits loss 1.4191536903381348
+[0.01593899 0.01580692 0.45953006 0.01613043 0.47541675 0.01717692]
+Logits loss 1.4129719734191895
+[0.01504801 0.01377644 0.42992023 0.01385265 0.5125338  0.01486891]
+timecheck 100
+{'total': 33578561536, 'available': 25396318208, 'percent': 24.4, 'used': 7674273792, 'free': 2829807616, 'active': 10462892032, 'inactive': 18053935104, 'buffers': 1047982080, 'cached': 22026498048, 'shared': 42119168, 'slab': 1845104640}
+Logits loss 1.4145433902740479
+[0.0168255  0.01639549 0.46248117 0.017372   0.46881706 0.01810887]
+Logits loss 1.403857707977295
+[0.01449431 0.01373012 0.45031774 0.01318006 0.49381778 0.01446005]
+Logits loss 1.4017302989959717
+[0.01613605 0.01540812 0.455248   0.01529131 0.4820017  0.01591488]
+Logits loss 1.3798677921295166
+[0.01592589 0.01716765 0.44390452 0.0147431  0.4925062  0.0157526 ]
+Logits loss 1.38765287399292
+[0.01407933 0.01341507 0.43587103 0.01300217 0.50957114 0.01406126]
+Logits loss 1.3789820671081543
+[0.01276764 0.01199911 0.43936676 0.01200364 0.50931305 0.0145498 ]
+Logits loss 1.4031927585601807
+[0.02062726 0.0200121  0.46208277 0.01983013 0.45605162 0.02139614]
+Logits loss 1.3916895389556885
+[0.01424176 0.01333148 0.47513655 0.01294794 0.46994284 0.01439947]
+Logits loss 1.3792860507965088
+[0.01514474 0.01448556 0.47894698 0.01342203 0.4632566  0.01474412]
+Logits loss 1.3879735469818115
+[0.01231378 0.01163541 0.4559111  0.01154593 0.49607074 0.01252296]
+Perturbation Test Algorithm: rainbow Environment: PongNoFrameskip-v4
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Meantime test 1 [-4.0]
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Meantime test 2 [-21.0]
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Meantime test 3 [19.0]
+Average perturbation -0.0002496119529481918
+Logits loss 1.3859913349151611
+[0.01797207 0.01717857 0.4453961  0.01664486 0.48479453 0.01801394]
+Logits loss 1.3688414096832275
+[0.01513589 0.01337565 0.4603352  0.01936452 0.47997507 0.01181366]
+Logits loss 1.3715773820877075
+[0.01469094 0.01387593 0.45137948 0.01528547 0.48821574 0.01655237]
+Logits loss 1.3914395570755005
+[0.01067922 0.01039881 0.4621501  0.00983651 0.49627125 0.01066415]
+Logits loss 1.369274377822876
+[0.01327379 0.01294752 0.47171178 0.01259172 0.47733006 0.0121452 ]
+Logits loss 1.372657060623169
+[0.01261035 0.01241726 0.4811126  0.01115304 0.47035465 0.01235198]
+Logits loss 1.3690619468688965
+[0.01120493 0.01080904 0.44675654 0.01039945 0.5095749  0.0112551 ]
+Logits loss 1.3728253841400146
+[0.01274008 0.01247695 0.42590752 0.01216927 0.5234004  0.01330574]
+Logits loss 1.3637241125106812
+[0.01150808 0.01100763 0.45832992 0.01054964 0.49720535 0.0113994 ]
+Logits loss 1.3763548135757446
+[0.05443049 0.0294053  0.41422123 0.01947909 0.46853504 0.01392881]
+Logits loss 1.3816988468170166
+[0.01425367 0.013981   0.4715719  0.01229026 0.4744464  0.01345672]
+Logits loss 1.3572516441345215
+[0.01243768 0.01193613 0.4698152  0.01126652 0.4824166  0.01212795]
+Logits loss 1.3652374744415283
+[0.0131133  0.01287266 0.45288756 0.01257311 0.49523544 0.01331799]
+Logits loss 1.3535771369934082
+[0.01640218 0.0161379  0.50157833 0.01454364 0.43527463 0.01606332]
+Logits loss 1.3680039644241333
+[0.01160943 0.01136505 0.4447285  0.01122288 0.5092365  0.01183759]
+Logits loss 1.3714832067489624
+[0.01491577 0.01503117 0.45356134 0.01457093 0.48695692 0.01496389]
+Logits loss 1.3524342775344849
+[0.01545224 0.01490801 0.4371746  0.01484654 0.5020489  0.01556971]
+Logits loss 1.3899846076965332
+[0.01130895 0.0112712  0.44998708 0.01084482 0.50492847 0.01165943]
+Logits loss 1.3510528802871704
+[0.02690502 0.01634946 0.45322314 0.01570163 0.47462824 0.01319239]
+Logits loss 1.3614130020141602
+[0.01567924 0.0151778  0.51168144 0.01507812 0.4265861  0.01579721]
+Logits loss 1.3538153171539307
+[0.01024708 0.00807503 0.49409753 0.01324492 0.4651341  0.00920144]
+Logits loss 1.3379017114639282
+[0.16764615 0.16204186 0.16895801 0.15790135 0.17450476 0.1689479 ]
+Logits loss 1.3289467096328735
+[0.01233109 0.01166538 0.527183   0.01184872 0.4245955  0.01237631]
+Logits loss 1.3317844867706299
+[0.01034041 0.01012156 0.4371455  0.01004775 0.5216978  0.01064704]
+Logits loss 1.3473448753356934
+[0.00999994 0.00959971 0.46888486 0.00902932 0.49301216 0.00947404]
+Logits loss 1.3122944831848145
+[0.02360935 0.02398583 0.44886038 0.02192636 0.4575977  0.02402039]
+Logits loss 1.2870285511016846
+[0.01558174 0.01477221 0.5305794  0.01405845 0.4103547  0.01465358]
+Logits loss 1.2334649562835693
+[0.01755681 0.01616492 0.53376716 0.01584128 0.39950246 0.01716736]
+Logits loss 1.1117438077926636
+[0.01079213 0.01028671 0.73834676 0.00989812 0.21988195 0.01079427]
+Logits loss 0.9823986291885376
+[0.0210349  0.01948708 0.6090186  0.02091833 0.30752793 0.02201311]
+Logits loss 0.946333646774292
+[0.20717344 0.02290118 0.3027126  0.16413206 0.19597697 0.10710371]
+Logits loss 0.8860788345336914
+[0.00717485 0.00649222 0.8782006  0.00642128 0.0946894  0.00702173]
+Logits loss 0.84822678565979
+[0.20497552 0.17181675 0.17222504 0.23755805 0.04649229 0.16693242]
+Logits loss 0.7899726629257202
+[0.0246001  0.02418217 0.64472365 0.02518126 0.25329927 0.02801345]
+Logits loss 0.762676477432251
+[0.00543513 0.00527065 0.8873544  0.00592463 0.0894357  0.00657945]
+Logits loss 0.7157348990440369
+[0.00468031 0.00446137 0.93913263 0.00445418 0.04247679 0.00479479]
+Logits loss 0.6497671008110046
+[0.00588644 0.00564174 0.9657328  0.00548366 0.01148085 0.00577452]
+Logits loss 0.6864495277404785
+[0.00785354 0.00740283 0.8761262  0.00709286 0.09379082 0.00773364]
+Logits loss 0.6363674402236938
+[0.00461929 0.00440227 0.9635726  0.00428987 0.01871429 0.00440175]
+Logits loss 0.6835165023803711
+[0.00457495 0.00439033 0.95278597 0.00445046 0.02920036 0.0045979 ]
+timecheck 200
+{'total': 33578561536, 'available': 24238870528, 'percent': 27.8, 'used': 8831725568, 'free': 1658437632, 'active': 11620712448, 'inactive': 18054348800, 'buffers': 1051246592, 'cached': 22037151744, 'shared': 42115072, 'slab': 1850236928}
+Logits loss 0.6274490356445312
+[0.00516286 0.00490664 0.96985036 0.00480652 0.010234   0.00503966]
+Logits loss 0.6331315040588379
+[0.00583227 0.00544458 0.9316691  0.00546724 0.04582867 0.00575819]
+Logits loss 0.5855316519737244
+[0.11513992 0.13424918 0.4393945  0.01699942 0.23044257 0.06377432]
+Logits loss 0.5654335021972656
+[0.00656165 0.00628703 0.9644017  0.00595921 0.01061502 0.00617542]
+Logits loss 0.5644625425338745
+[0.01652078 0.01653663 0.9126216  0.01586638 0.02105137 0.01740331]
+Logits loss 0.5963068008422852
+[0.01092618 0.01042712 0.9448564  0.01043342 0.01193688 0.01141998]
+Logits loss 0.5323541760444641
+[0.0120302  0.00773963 0.8524438  0.01019104 0.10985035 0.0077449 ]
+Logits loss 0.5443732738494873
+[0.00487593 0.00460668 0.9649818  0.00460661 0.01598207 0.00494694]
+Logits loss 0.5543703436851501
+[0.00602951 0.00595945 0.93203235 0.00641654 0.04288291 0.00667918]
+Logits loss 0.5465971231460571
+[0.00483365 0.00461741 0.96995914 0.00460247 0.01114714 0.00484025]
+Logits loss 0.530716061592102
+[0.00696701 0.00609711 0.9219685  0.00850706 0.04868783 0.00777255]
+Logits loss 0.5277025699615479
+[0.00641698 0.00616561 0.95679224 0.00622307 0.01831349 0.00608873]
+Logits loss 0.5326349139213562
+[0.00491164 0.0045608  0.95170254 0.00465154 0.02946793 0.00470554]
+Logits loss 0.49754655361175537
+[0.00592471 0.00566432 0.90953404 0.00596509 0.06665023 0.00626167]
+Logits loss 0.5380349159240723
+[0.00609509 0.00580693 0.9628724  0.00565587 0.01374543 0.00582437]
+Logits loss 0.5468788146972656
+[0.0119262  0.00993348 0.8280416  0.01242405 0.12661332 0.01106125]
+Logits loss 0.49828216433525085
+[0.00505741 0.00521743 0.8925713  0.00460947 0.08744486 0.00509959]
+Logits loss 0.5618007779121399
+[0.00689569 0.00664202 0.9570848  0.00645205 0.01612704 0.00679842]
+Logits loss 0.5152541399002075
+[0.00878842 0.00882999 0.8582308  0.00876463 0.10615133 0.0092348 ]
+Logits loss 0.5127168893814087
+[0.01508386 0.00899495 0.88870037 0.00869385 0.0651352  0.01339181]
+Perturbation Test Algorithm: rainbow Environment: PongNoFrameskip-v4
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Meantime test 1 [-9.0]
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Meantime test 2 [-21.0]
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Meantime test 3 [20.0]
+Average perturbation -4.285782609396781e-05
+Logits loss 0.6412880420684814
+[0.02267951 0.02402075 0.62778264 0.02304227 0.27922806 0.02324676]
+Logits loss 0.5281167030334473
+[0.00893578 0.00584014 0.8393909  0.00863624 0.13175829 0.00543863]
+Logits loss 0.5944674611091614
+[0.01065612 0.00843114 0.8676877  0.00602496 0.09669228 0.01050776]
+Logits loss 0.5178759098052979
+[0.03624178 0.03702183 0.816732   0.03391003 0.04049676 0.03559763]
+Logits loss 0.5794800519943237
+[0.00821482 0.00668958 0.8817406  0.00637923 0.08987797 0.00709781]
+Logits loss 0.4971705377101898
+[0.02082776 0.02201832 0.5619372  0.02164254 0.34638223 0.02719198]
+Logits loss 0.5325736999511719
+[0.00630155 0.0056533  0.92992294 0.00560534 0.0465079  0.00600898]
+Logits loss 0.5561567544937134
+[0.00525624 0.00513111 0.97296166 0.0050555  0.00637362 0.0052218 ]
+Logits loss 0.6055723428726196
+[0.00525218 0.00505626 0.97094554 0.00494143 0.00869005 0.00511459]
+Logits loss 0.5119343996047974
+[0.0054206  0.0051111  0.968927   0.00498551 0.01023047 0.00532526]
+Logits loss 0.47896242141723633
+[0.0059105  0.00384382 0.9236842  0.00400677 0.05862047 0.00393423]
+Logits loss 0.5083041191101074
+[0.00475214 0.00460044 0.973525   0.00457108 0.00783605 0.00471519]
+Logits loss 0.5390769243240356
+[0.00925892 0.00846082 0.93977904 0.01065435 0.0210915  0.01075541]
+Logits loss 0.5349016189575195
+[0.00443361 0.00437622 0.96836936 0.00430311 0.01408806 0.00442973]
+Logits loss 0.5705441236495972
+[0.00464505 0.0044935  0.9736404  0.00449027 0.00810775 0.00462309]
+Logits loss 0.5533796548843384
+[0.00464838 0.00448255 0.9642188  0.0045176  0.01743864 0.0046941 ]
+Logits loss 0.5198116898536682
+[0.02486866 0.02476083 0.87658024 0.02316023 0.02699514 0.02363498]
+Logits loss 0.4831773638725281
+[0.00641902 0.0061968  0.9627559  0.00600918 0.01242942 0.00618962]
+Logits loss 0.5140878558158875
+[0.0046055  0.00452026 0.96489555 0.00456508 0.01675783 0.00465577]
+Logits loss 0.5445781350135803
+[0.00643368 0.00662741 0.9540013  0.00651708 0.01966712 0.0067535 ]
+Logits loss 0.5153328776359558
+[0.00662106 0.00648586 0.95718175 0.00632616 0.0167266  0.00665846]
+Logits loss 0.5716959834098816
+[0.00472958 0.00469398 0.96497047 0.00454271 0.01632235 0.00474094]
+Logits loss 0.5319066047668457
+[0.00450347 0.00421327 0.89423144 0.0043638  0.08771677 0.00497127]
+Logits loss 0.4805585741996765
+[0.00753341 0.00764788 0.8055304  0.00780586 0.1633754  0.00810704]
+Logits loss 0.4911700189113617
+[0.01230894 0.01026564 0.9183216  0.01197996 0.03465401 0.01246983]
+Logits loss 0.47800442576408386
+[0.00788053 0.00743017 0.9490636  0.00748291 0.02035988 0.00778288]
+Logits loss 0.47921836376190186
+[0.00686279 0.00673338 0.9663017  0.00645832 0.00698514 0.00665868]
+Logits loss 0.5024604201316833
+[0.00658045 0.00574495 0.95258063 0.00734624 0.01999317 0.00775459]
+Logits loss 0.5586218237876892
+[0.02385592 0.02349233 0.8840678  0.02295816 0.02236352 0.0232622 ]
+Logits loss 0.5311338901519775
+[0.0057224  0.00559663 0.95745677 0.00542895 0.02006974 0.00572548]
+timecheck 300
+{'total': 33578561536, 'available': 24059396096, 'percent': 28.3, 'used': 9011183616, 'free': 1501097984, 'active': 11803811840, 'inactive': 18034126848, 'buffers': 1051127808, 'cached': 22015152128, 'shared': 42110976, 'slab': 1850028032}
+Logits loss 0.48141250014305115
+[0.00434937 0.00423699 0.9695198  0.00429352 0.01306473 0.0045356 ]
+Logits loss 0.5261363983154297
+[0.0045786  0.00449135 0.97687393 0.00440047 0.00514144 0.00451413]
+Logits loss 0.5183714628219604
+[0.00991037 0.00929045 0.94838303 0.00956204 0.01317134 0.00968283]
+Logits loss 0.4493247866630554
+[0.00878351 0.00835763 0.9570015  0.00806929 0.00945774 0.00833041]
+Logits loss 0.5531660914421082
+[0.0201702  0.0206153  0.8722391  0.01910877 0.04802249 0.0198441 ]
+Logits loss 0.48223966360092163
+[0.00540085 0.00509471 0.95889574 0.00505979 0.0204203  0.00512857]
+Logits loss 0.521491289138794
+[0.00445696 0.00431016 0.97062546 0.00434276 0.01171151 0.00455321]
+Logits loss 0.513440728187561
+[0.00445039 0.00434002 0.9755795  0.00430987 0.00690307 0.00441717]
+Logits loss 0.4916558563709259
+[0.00513995 0.00537178 0.8870635  0.0051327  0.09088676 0.00640536]
+Logits loss 0.46496903896331787
+[0.00486081 0.00459858 0.96616834 0.00467913 0.01491357 0.00477945]
+Logits loss 0.4926219582557678
+[0.00542191 0.00544444 0.9622465  0.00509562 0.0165527  0.00523889]
+Logits loss 0.48444458842277527
+[0.00414526 0.0039681  0.94896793 0.00402325 0.03465203 0.00424348]
+Logits loss 0.4662395119667053
+[0.00545918 0.00542872 0.95693314 0.00549767 0.02116443 0.00551695]
+Logits loss 0.4867111146450043
+[0.00475597 0.00463649 0.9674952  0.00460462 0.0137664  0.00474124]
+Logits loss 0.5113298296928406
+[0.00445067 0.00438262 0.9726681  0.00437416 0.00968964 0.00443482]
+Logits loss 0.5099067091941833
+[0.00764378 0.00716813 0.8948362  0.00711869 0.0754271  0.00780614]
+Logits loss 0.4605002701282501
+[0.01202563 0.01131002 0.9095604  0.01189673 0.04293253 0.0122747 ]
+Logits loss 0.45064815878868103
+[0.00777007 0.00736754 0.9576149  0.00714212 0.01277276 0.00733261]
+Logits loss 0.46802467107772827
+[0.00541662 0.00524164 0.9619211  0.00544075 0.01652797 0.00545202]
+Logits loss 0.4900284707546234
+[0.00617331 0.00584778 0.9637002  0.00595813 0.01221271 0.00610782]
+Logits loss 0.4931830167770386
+[0.00492067 0.0050099  0.9610746  0.00484643 0.01908312 0.00506529]
+Logits loss 0.5153670310974121
+[0.00520922 0.0050247  0.96635437 0.00517344 0.01281434 0.00542398]
+Logits loss 0.5075432658195496
+[0.0047467  0.0046787  0.9757159  0.00458582 0.00559503 0.00467785]
+Logits loss 0.46983152627944946
+[0.00464469 0.00460498 0.9654217  0.00463548 0.01597151 0.00472168]
+Logits loss 0.45245155692100525
+[0.00696605 0.0068141  0.96544605 0.00675107 0.00716325 0.00685949]
+Logits loss 0.4864214062690735
+[0.00445372 0.00430608 0.9768987  0.00431222 0.0056443  0.00438498]
+Logits loss 0.4551895260810852
+[0.00622437 0.00594268 0.9573973  0.00638296 0.01728863 0.00676409]
+Logits loss 0.48278066515922546
+[0.005271   0.0053446  0.9659091  0.00550382 0.01235484 0.00561657]
+Logits loss 0.4854065179824829
+[0.00853899 0.00877718 0.89001524 0.00882566 0.07466791 0.00917504]
+Logits loss 0.4562590420246124
+[0.00343239 0.00331042 0.9151951  0.00329896 0.07133277 0.00343031]
+Perturbation Test Algorithm: rainbow Environment: PongNoFrameskip-v4
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Meantime test 1 [-2.0]
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Meantime test 2 [-21.0]
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Meantime test 3 [19.0]
+Average perturbation 3.332538264138358e-06
+Logits loss 0.4274460971355438
+[0.00416216 0.00392068 0.94147384 0.00417746 0.04181128 0.00445449]
+Logits loss 0.44996142387390137
+[0.01015701 0.01012768 0.9502274  0.00939973 0.01065107 0.00943715]
+Logits loss 0.4447241723537445
+[0.00415444 0.00391311 0.9401942  0.00417395 0.04311394 0.00445048]
+Logits loss 0.4540284276008606
+[0.00595564 0.00576197 0.96751773 0.00573991 0.00914252 0.00588233]
+Logits loss 0.4261348247528076
+[0.00450603 0.00441955 0.9720624  0.00431402 0.01028349 0.00441455]
+Logits loss 0.47843319177627563
+[0.00497378 0.00499872 0.96959126 0.00499505 0.01041303 0.0050281 ]
+Logits loss 0.46696382761001587
+[0.01770697 0.01698843 0.9136513  0.01675484 0.01794925 0.01694925]
+Logits loss 0.40941107273101807
+[0.00469777 0.00455381 0.93044764 0.00477093 0.05062196 0.00490795]
+Logits loss 0.43664777278900146
+[0.00417298 0.00411805 0.9750191  0.00414308 0.00824118 0.00430564]
+Logits loss 0.4578874707221985
+[0.00493186 0.00469579 0.9688835  0.0049433  0.01159814 0.0049474 ]
+Logits loss 0.4429202973842621
+[0.01056797 0.01042409 0.88742286 0.0110554  0.06931423 0.01121543]
+Logits loss 0.45008009672164917
+[0.00479372 0.00415191 0.9601198  0.00420767 0.02242392 0.00430294]
+Logits loss 0.4004054367542267
+[0.00419011 0.0040603  0.9701348  0.00412691 0.01318959 0.00429828]
+Logits loss 0.42411771416664124
+[0.00424114 0.0040312  0.94801295 0.00406754 0.03533162 0.00431562]
+Logits loss 0.39302748441696167
+[0.00378372 0.00377213 0.9686811  0.00377602 0.01611085 0.00387622]
+Logits loss 0.4074086844921112
+[0.00794772 0.00771441 0.9094504  0.00753641 0.05964196 0.00770894]
+Logits loss 0.42000287771224976
+[0.00440183 0.00430343 0.9762838  0.00431946 0.00631708 0.00437442]
+Logits loss 0.4252485930919647
+[0.00679363 0.00500268 0.9393338  0.0082814  0.03225638 0.008332  ]
+Logits loss 0.4159524142742157
+[0.0067227  0.00610572 0.9357586  0.00693897 0.03731043 0.00716369]
+Logits loss 0.47053542733192444
+[0.02330298 0.02235699 0.8882692  0.02126715 0.02250906 0.02229473]
+timecheck 400
+{'total': 33578561536, 'available': 24061865984, 'percent': 28.3, 'used': 9008705536, 'free': 1512505344, 'active': 11798638592, 'inactive': 18026303488, 'buffers': 1051082752, 'cached': 22006267904, 'shared': 42110976, 'slab': 1849839616}
+Logits loss 0.4676092267036438
+[0.00629762 0.00557539 0.95590246 0.0071986  0.01700319 0.00802271]
+Logits loss 0.4297449588775635
+[0.00421661 0.0040233  0.94668424 0.00419516 0.03643404 0.00444667]
+Logits loss 0.40177884697914124
+[0.016422   0.01642644 0.9184987  0.01607096 0.01636513 0.01621683]
+Logits loss 0.4148440957069397
+[0.00431418 0.00420384 0.9744279  0.00421859 0.0085338  0.00430166]
+Logits loss 0.40103721618652344
+[0.0088241  0.00836074 0.9489052  0.00872849 0.01596258 0.00921888]
+Logits loss 0.4383852183818817
+[0.03297013 0.03403836 0.71681285 0.03218438 0.15081859 0.03317555]
+Logits loss 0.4442427158355713
+[0.00680972 0.00672374 0.86426234 0.00660719 0.10759114 0.00800594]
+Logits loss 0.42758339643478394
+[0.00873309 0.0043872  0.84450495 0.00472451 0.13069211 0.00695806]
+Logits loss 0.4325525760650635
+[0.00929502 0.0084343  0.9559417  0.00791269 0.01037801 0.00803826]
+Logits loss 0.41826897859573364
+[0.00706734 0.006863   0.9641575  0.00668198 0.00840326 0.00682697]
+Logits loss 0.4007411301136017
+[0.01013923 0.01017818 0.9479309  0.0098186  0.01215272 0.00978032]
+Logits loss 0.4400181174278259
+[0.00581834 0.00563818 0.9082304  0.00577617 0.06835227 0.00618458]
+Logits loss 0.38292041420936584
+[0.00356611 0.00353445 0.9271129  0.00354264 0.05864769 0.00359617]
+Logits loss 0.45261240005493164
+[0.00533654 0.00520018 0.9738391  0.00512737 0.00533037 0.00516633]
+Logits loss 0.45234692096710205
+[0.00593654 0.00579332 0.959653   0.00585931 0.0165059  0.00625199]
+Logits loss 0.3886042833328247
+[0.03051797 0.06172142 0.68115807 0.01484157 0.18302104 0.02874   ]
+Logits loss 0.49314963817596436
+[0.01064093 0.01061628 0.9472009  0.01026484 0.01088316 0.01039387]
+Logits loss 0.46375754475593567
+[0.01691636 0.01151196 0.80655086 0.01030013 0.1305681  0.02415256]
+Logits loss 0.4056388735771179
+[0.00517217 0.00504757 0.9737768  0.00505956 0.0058454  0.0050985 ]
+Logits loss 0.43301498889923096
+[0.00471286 0.00464459 0.9733767  0.00471241 0.00781104 0.00474242]
+Logits loss 0.41965192556381226
+[0.00594604 0.00578394 0.9115169  0.00590682 0.0645242  0.00632213]
+Logits loss 0.4546382427215576
+[0.00400827 0.00382315 0.93639505 0.00380513 0.04783871 0.00412969]
+Logits loss 0.4311891198158264
+[0.01674151 0.00866253 0.84332985 0.01263965 0.10931247 0.00931391]
+Logits loss 0.44640475511550903
+[0.0038058  0.0036217  0.9209719  0.00363856 0.0640249  0.00393713]
+Logits loss 0.42049509286880493
+[0.00462058 0.00464541 0.9391707  0.0046053  0.042128   0.0048301 ]
+Logits loss 0.40088802576065063
+[0.00753992 0.00788048 0.9495336  0.0080624  0.01883085 0.00815278]
+Logits loss 0.45481076836586
+[0.00431363 0.00417552 0.96720785 0.00433407 0.01544425 0.00452477]
+Logits loss 0.4134764075279236
+[0.019459   0.01892437 0.89557016 0.01900499 0.02831177 0.01872957]
+Logits loss 0.4223111569881439
+[0.01178489 0.01112073 0.93762404 0.01112925 0.01699357 0.01134747]
+Logits loss 0.4113945960998535
+[0.00618911 0.00520291 0.9204919  0.00528433 0.05754204 0.00528985]
+Logits loss 0.4452461302280426
+[0.00793332 0.00822237 0.9349424  0.0082541  0.03232426 0.00832344]
+Logits loss 0.44930514693260193
+[0.00636152 0.00646855 0.9301365  0.00694377 0.04304781 0.00704184]
+Logits loss 0.4354797601699829
+[0.02078916 0.01135033 0.8285603  0.00629414 0.11590376 0.01710238]
+Logits loss 0.44788020849227905
+[0.06086405 0.06557039 0.6312018  0.05979306 0.11892423 0.06364646]
+Logits loss 0.4419930577278137
+[0.00436097 0.00429083 0.9767752  0.00427529 0.0059773  0.00432055]
+Logits loss 0.43260765075683594
+[0.0041161  0.0039182  0.92626595 0.00396554 0.05746803 0.00426613]
+Logits loss 0.42227819561958313
+[0.00551852 0.00539796 0.9721934  0.00524571 0.00635749 0.0052869 ]
+Logits loss 0.4087451994419098
+[0.0049902  0.00483722 0.97326815 0.00478741 0.00722036 0.00489656]
+Logits loss 0.4610602557659149
+[0.0038876  0.00364975 0.8897656  0.0037944  0.0933053  0.00559733]
+Logits loss 0.4285813570022583
+[0.0073197  0.0070615  0.95831835 0.00706966 0.01301365 0.00721716]
+Perturbation Test Algorithm: rainbow Environment: PongNoFrameskip-v4
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Meantime test 1 [-6.0]
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Meantime test 2 [-21.0]
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Meantime test 3 [19.0]
+Average perturbation -3.3161974598626164e-05
+Logits loss 0.4381232261657715
+[0.01907382 0.02107074 0.7193327  0.01866641 0.20024943 0.02160696]
+Logits loss 0.4086762070655823
+[0.00643632 0.0054009  0.9414781  0.0079069  0.03278993 0.00598781]
+Logits loss 0.4099825322628021
+[0.00552946 0.00522624 0.96877193 0.00537852 0.00972491 0.00536887]
+Logits loss 0.4161318838596344
+[0.00584387 0.0057317  0.97115636 0.0056499  0.00593186 0.00568633]
+Logits loss 0.41729894280433655
+[0.02656039 0.02630323 0.86602587 0.02474156 0.03124488 0.02512409]
+Logits loss 0.3953266441822052
+[0.00458077 0.00451928 0.97661704 0.00450556 0.00524043 0.00453704]
+Logits loss 0.4282990097999573
+[0.00657893 0.00629155 0.9666218  0.00607588 0.00824337 0.00618842]
+Logits loss 0.43568307161331177
+[0.00597408 0.00390902 0.93028593 0.00635321 0.04403111 0.00944671]
+Logits loss 0.3891083002090454
+[0.00552483 0.0052605  0.96572477 0.00552993 0.01234371 0.00561622]
+Logits loss 0.4255087375640869
+[0.0049657  0.00493441 0.97481865 0.00481981 0.00562596 0.00483545]
+timecheck 500
+{'total': 33578561536, 'available': 24135999488, 'percent': 28.1, 'used': 8934572032, 'free': 1586606080, 'active': 11718696960, 'inactive': 18026299392, 'buffers': 1051111424, 'cached': 22006272000, 'shared': 42110976, 'slab': 1849839616}
+Logits loss 0.42206159234046936
+[0.00517989 0.00535643 0.9636966  0.00550301 0.01480209 0.00546192]
+Logits loss 0.4167543649673462
+[0.00496749 0.00467925 0.9182008  0.00469017 0.06250576 0.00495651]
+Logits loss 0.44542086124420166
+[0.00480555 0.0042938  0.87844217 0.00436177 0.10357278 0.00452397]
+Logits loss 0.41178977489471436
+[0.00701435 0.00623997 0.8920531  0.00875657 0.07894437 0.00699156]
+Logits loss 0.4735637903213501
+[0.00590314 0.00563412 0.96657825 0.00772422 0.00796581 0.00619444]
+Logits loss 0.3787018060684204
+[0.00566022 0.00577656 0.970932   0.00564947 0.00627617 0.00570552]
+Logits loss 0.430483877658844
+[0.00639142 0.00618357 0.92087656 0.00634689 0.05415482 0.0060469 ]
+Logits loss 0.4799967408180237
+[0.00462433 0.00445585 0.9636905  0.00451502 0.01801205 0.00470215]
+Logits loss 0.4688502550125122
+[0.00660018 0.0067291  0.92221165 0.00710134 0.050333   0.00702475]
+Logits loss 0.45269179344177246
+[0.00430969 0.00392623 0.93231225 0.00411366 0.05006973 0.00526845]
+Logits loss 0.414989173412323
+[0.00492792 0.00499408 0.93456537 0.00514601 0.04505957 0.0053072 ]
+Logits loss 0.42413127422332764
+[0.01140767 0.01086567 0.8759843  0.01071092 0.08089697 0.01013451]
+Logits loss 0.4077925682067871
+[0.00552807 0.00544286 0.9723337  0.00528872 0.00608459 0.00532203]
+Logits loss 0.4287228286266327
+[0.00689344 0.00671919 0.95826733 0.00659624 0.0147396  0.00678423]
+Logits loss 0.4169483482837677
+[0.00458664 0.00447213 0.973586   0.00459925 0.00813666 0.0046193 ]
+Logits loss 0.4184509813785553
+[0.00437191 0.00426913 0.97308844 0.00437413 0.00951154 0.00438483]
+Logits loss 0.3997664749622345
+[0.00740206 0.00718978 0.9610798  0.00695553 0.01033679 0.0070361 ]
+Logits loss 0.37733110785484314
+[0.00437486 0.0042742  0.97355574 0.00424686 0.0091936  0.00435476]
+Logits loss 0.4578950107097626
+[0.00572219 0.00583655 0.94912255 0.00589295 0.02754589 0.00588002]
+Logits loss 0.4361295700073242
+[0.00761862 0.00743337 0.96064603 0.00730984 0.0094863  0.00750585]
+Logits loss 0.3729800283908844
+[0.00536229 0.00502895 0.9635742  0.00571741 0.0139876  0.00632969]
+Logits loss 0.3893754184246063
+[0.01163638 0.01013776 0.9423781  0.01388893 0.01086021 0.01109858]
+Logits loss 0.3976939916610718
+[0.00475429 0.00481827 0.9719054  0.00456317 0.00928859 0.0046702 ]
+Logits loss 0.42614808678627014
+[0.00410043 0.00370218 0.8676511  0.01129177 0.10844204 0.00481246]
+Logits loss 0.4125688076019287
+[0.00500629 0.00498665 0.97051334 0.00505319 0.00926951 0.00517098]
+Logits loss 0.39797118306159973
+[0.00465472 0.0045052  0.969302   0.00441341 0.01247933 0.00464524]
+Logits loss 0.43407368659973145
+[0.00510382 0.00477224 0.9681809  0.00492561 0.01181113 0.00520635]
+Logits loss 0.4128085672855377
+[0.00472792 0.00454018 0.96773976 0.00460505 0.01349294 0.00489423]
+Logits loss 0.41316401958465576
+[0.00514176 0.00501528 0.97176516 0.00496564 0.00812504 0.00498718]
+Logits loss 0.39167460799217224
+[0.00642047 0.00634095 0.9686432  0.00618395 0.00617248 0.00623886]
+Logits loss 0.4270714819431305
+[0.00788978 0.00772683 0.96070224 0.00750256 0.00862849 0.00755011]
+Logits loss 0.4553259611129761
+[0.00460951 0.0044123  0.97393155 0.00439089 0.00822107 0.00443468]
+Logits loss 0.3971928656101227
+[0.0069105  0.00588882 0.90553945 0.00743034 0.06642377 0.00780702]
+Logits loss 0.4187387228012085
+[0.00567542 0.00530921 0.9663453  0.00856526 0.00792003 0.0061847 ]
+Logits loss 0.37688928842544556
+[0.00479162 0.00473392 0.97450453 0.00472067 0.00647336 0.00477585]
+Logits loss 0.40201884508132935
+[0.00753781 0.00764142 0.9415162  0.00707214 0.02871981 0.00751259]
+Logits loss 0.39272141456604004
+[0.0075095  0.00739827 0.9587043  0.00712873 0.0119327  0.00732655]
+Logits loss 0.4410584568977356
+[0.00528304 0.00519659 0.97328836 0.00509915 0.00596274 0.00517012]
+Logits loss 0.41343218088150024
+[0.00484089 0.00479809 0.9733912  0.00483812 0.00730003 0.00483181]
+Logits loss 0.42035457491874695
+[0.0098029  0.00591629 0.87483925 0.00995798 0.09351619 0.00596746]
+Logits loss 0.47461986541748047
+[0.00703749 0.00693376 0.9653495  0.0068863  0.0068762  0.00691683]
+Logits loss 0.4445924162864685
+[0.00610336 0.00586964 0.9653073  0.00573826 0.01072575 0.00625563]
+Logits loss 0.4283594489097595
+[0.00467006 0.00467577 0.9743871  0.00451143 0.0070634  0.00469218]
+Logits loss 0.42258307337760925
+[0.00596923 0.00554861 0.96431875 0.00668032 0.01023987 0.00724318]
+Logits loss 0.41995057463645935
+[0.00428785 0.00424346 0.97653764 0.00415207 0.00659605 0.00418288]
+Logits loss 0.448041170835495
+[0.00898548 0.00928073 0.93961424 0.00942771 0.02352144 0.00917027]
+Logits loss 0.4080227017402649
+[0.00619398 0.00602441 0.96043044 0.00592054 0.01536107 0.00606954]
+Logits loss 0.36802035570144653
+[0.01041941 0.01090082 0.9435396  0.01030033 0.01469828 0.01014151]
+Logits loss 0.4101335406303406
+[0.00669718 0.0068213  0.91246843 0.00720527 0.05969704 0.00711074]
+Logits loss 0.5012091994285583
+[0.00431078 0.00418567 0.97779924 0.0041787  0.0053093  0.00421627]
+timecheck 600
+{'total': 33578561536, 'available': 24073097216, 'percent': 28.3, 'used': 8997474304, 'free': 1523683328, 'active': 11781144576, 'inactive': 18026307584, 'buffers': 1051119616, 'cached': 22006284288, 'shared': 42110976, 'slab': 1849839616}
+Perturbation Test Algorithm: rainbow Environment: PongNoFrameskip-v4
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Meantime test 1 [-6.0]
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Meantime test 2 [-21.0]
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Meantime test 3 [19.0]
+Average perturbation 2.7666256980560805e-06
+Logits loss 0.3715969920158386
+[0.01132706 0.01103072 0.9417552  0.01094367 0.01383859 0.01110474]
+Logits loss 0.3878858685493469
+[0.01743949 0.00479989 0.7314704  0.16176045 0.06009072 0.02443907]
+Logits loss 0.43547338247299194
+[0.00608889 0.00585737 0.93147945 0.00634486 0.04401109 0.00621827]
+Logits loss 0.3795713484287262
+[0.00435853 0.00417962 0.97346604 0.00505793 0.00632142 0.00661656]
+Logits loss 0.37135183811187744
+[0.00409291 0.00390007 0.97398865 0.00397285 0.00979388 0.00425155]
+Logits loss 0.45226943492889404
+[0.00521787 0.00507784 0.94991845 0.00582834 0.02581803 0.00813951]
+Logits loss 0.42568546533584595
+[0.00792041 0.00786233 0.9607534  0.00758598 0.00815998 0.00771793]
+Logits loss 0.36029329895973206
+[0.00754437 0.00744408 0.9239358  0.00711466 0.04695274 0.00700831]
+Logits loss 0.4228421449661255
+[0.00495955 0.00466792 0.9550256  0.00496619 0.02527843 0.00510235]
+Logits loss 0.3884137272834778
+[0.00529821 0.00529397 0.9405304  0.00548625 0.03795038 0.00544073]
+Logits loss 0.45860734581947327
+[0.00513108 0.00489872 0.93788534 0.00497016 0.04201109 0.00510362]
+Logits loss 0.37993401288986206
+[0.00470783 0.00437555 0.9366651  0.00455074 0.04433777 0.005363  ]
+Logits loss 0.36585354804992676
+[0.00386881 0.00356308 0.9007329  0.00358471 0.08449982 0.00375068]
+Logits loss 0.3756103515625
+[0.00595944 0.00583694 0.96966684 0.00590281 0.00657887 0.0060551 ]
+Logits loss 0.4396637976169586
+[0.00550457 0.00551151 0.9678215  0.00557634 0.0099033  0.00568281]
+Logits loss 0.4335137605667114
+[0.0043202  0.00422216 0.9771253  0.00423771 0.00578259 0.00431202]
+Logits loss 0.3887825012207031
+[0.0040369  0.00402443 0.9758685  0.0040276  0.00792659 0.00411598]
+Logits loss 0.4235363304615021
+[0.00399365 0.00387824 0.9745544  0.00395746 0.00955256 0.00406371]
+Logits loss 0.4063015580177307
+[0.00473652 0.00468241 0.9757952  0.00465395 0.00545557 0.00467616]
+Logits loss 0.38885945081710815
+[0.00434874 0.00430346 0.97732747 0.00420695 0.00558983 0.0042235 ]
+Logits loss 0.4097956120967865
+[0.00508402 0.00504437 0.9745918  0.00491206 0.00544319 0.00492457]
+Logits loss 0.36763861775398254
+[0.00515048 0.00491856 0.9729802  0.00502077 0.00690986 0.00502013]
+Logits loss 0.3946757912635803
+[0.00425287 0.00405386 0.9533965  0.00418315 0.02988315 0.00423038]
+Logits loss 0.41254922747612
+[0.00482378 0.00473687 0.96251094 0.00462474 0.0184313  0.00487242]
+Logits loss 0.4067479372024536
+[0.00850024 0.00835702 0.95841324 0.00828588 0.00813228 0.00831125]
+Logits loss 0.39526087045669556
+[0.00465258 0.0047491  0.97529477 0.00461249 0.00602234 0.00466854]
+Logits loss 0.41245418787002563
+[0.00501079 0.00558213 0.9002433  0.005361   0.07810488 0.00569785]
+Logits loss 0.4331371486186981
+[0.00458215 0.00491292 0.90701324 0.00425041 0.07438999 0.00485135]
+Logits loss 0.4056730568408966
+[0.00516522 0.00520196 0.9550224  0.00530025 0.023983   0.00532719]
+Logits loss 0.43805187940597534
+[0.00465349 0.0047476  0.93790615 0.00466627 0.04322003 0.00480649]
+Logits loss 0.39382877945899963
+[0.00704567 0.00710843 0.9549236  0.00722032 0.01624903 0.00745286]
+Logits loss 0.3671003580093384
+[0.00480379 0.00458881 0.974005   0.00448456 0.00748744 0.00463044]
+Logits loss 0.4086195230484009
+[0.00442514 0.00427689 0.9738836  0.0043045  0.00874158 0.00436834]
+Logits loss 0.4474996328353882
+[0.00602251 0.00806904 0.9169892  0.00870358 0.05088036 0.00933535]
+Logits loss 0.4434798061847687
+[0.00469904 0.00457736 0.9758538  0.00449034 0.00580028 0.00457913]
+Logits loss 0.40750652551651
+[0.00553462 0.00544953 0.91100365 0.00544084 0.06699783 0.00557361]
+Logits loss 0.3996061086654663
+[0.00776177 0.0079305  0.95175344 0.00813892 0.01670412 0.00771124]
+Logits loss 0.4268842339515686
+[0.01044057 0.01018441 0.8709736  0.01010377 0.08769481 0.01060295]
+Logits loss 0.40825286507606506
+[0.01095783 0.01090837 0.9444531  0.01071713 0.01205538 0.01090819]
+Logits loss 0.38842421770095825
+[0.01050731 0.01043482 0.94746023 0.01035768 0.01063789 0.01060206]
+Logits loss 0.40035033226013184
+[0.00558988 0.00567818 0.9694605  0.0053885  0.00845747 0.00542544]
+Logits loss 0.4338817894458771
+[0.00556856 0.00538267 0.96706176 0.00524018 0.01137744 0.00536928]
+Logits loss 0.40689629316329956
+[0.00498693 0.00478171 0.973106   0.00481683 0.00745474 0.00485377]
+Logits loss 0.4056362509727478
+[0.00576839 0.0055186  0.96789384 0.00556313 0.00959943 0.00565658]
+Logits loss 0.4239027202129364
+[0.00449069 0.00442179 0.9738524  0.00430997 0.00856992 0.00435516]
+Logits loss 0.38385915756225586
+[0.005102   0.00509172 0.973056   0.00500268 0.00661426 0.00513322]
+Logits loss 0.37080591917037964
+[0.00455521 0.00446182 0.9710334  0.0044553  0.01096923 0.00452505]
+Logits loss 0.4201982319355011
+[0.00478095 0.00469088 0.96649486 0.00472372 0.01455269 0.00475687]
+Logits loss 0.38803237676620483
+[0.0063165  0.00622715 0.9642544  0.00598921 0.01111756 0.00609514]
+Logits loss 0.40262484550476074
+[0.00444027 0.00433617 0.97327256 0.00438703 0.00919624 0.00436769]
+timecheck 700
+{'total': 33578561536, 'available': 24080969728, 'percent': 28.3, 'used': 8989597696, 'free': 1535758336, 'active': 11776299008, 'inactive': 18022326272, 'buffers': 1051136000, 'cached': 22002069504, 'shared': 42110976, 'slab': 1849819136}
+Logits loss 0.39162975549697876
+[0.00660979 0.00619503 0.96159846 0.00636223 0.01271901 0.00651539]
+Logits loss 0.3850020170211792
+[0.00988552 0.00930201 0.9506662  0.00936512 0.01122894 0.00955227]
+Logits loss 0.38333672285079956
+[0.00619999 0.00609967 0.9075939  0.00632385 0.06739054 0.00639208]
+Logits loss 0.3930259943008423
+[0.00497615 0.00476917 0.9703809  0.00475696 0.01018193 0.00493494]
+Logits loss 0.3800257444381714
+[0.04884623 0.04911974 0.7587356  0.04762302 0.0477776  0.04789778]
+Logits loss 0.4232531785964966
+[0.01583475 0.01361971 0.7068466  0.01393096 0.23541428 0.01435375]
+Logits loss 0.41099852323532104
+[0.00646513 0.0060948  0.86567086 0.00643303 0.10854979 0.00678635]
+Logits loss 0.3650130033493042
+[0.00481527 0.00471587 0.97090787 0.00449056 0.0105121  0.00455835]
+Logits loss 0.39478373527526855
+[0.00372069 0.00368928 0.96568054 0.0036974  0.0194689  0.00374329]
+Logits loss 0.4098204970359802
+[0.00445631 0.00451358 0.97226477 0.00453169 0.00975072 0.00448301]
+Perturbation Test Algorithm: rainbow Environment: PongNoFrameskip-v4
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Meantime test 1 [-4.0]
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Meantime test 2 [-21.0]
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Meantime test 3 [18.0]
+Average perturbation -4.6993536101717525e-05
+Logits loss 0.3978666365146637
+[0.00464011 0.00455628 0.9704974  0.00443105 0.01135856 0.0045166 ]
+Logits loss 0.37819403409957886
+[0.00429227 0.00420962 0.97783864 0.00418161 0.0052002  0.00427767]
+Logits loss 0.3914515972137451
+[0.0103904  0.00853429 0.8391619  0.0163979  0.11581833 0.00969723]
+Logits loss 0.39094793796539307
+[0.02103262 0.0207536  0.890225   0.0209108  0.02560066 0.02147737]
+Logits loss 0.38272708654403687
+[0.00426724 0.0042002  0.9710499  0.00420591 0.01193652 0.00434016]
+Logits loss 0.40127208828926086
+[0.00439896 0.00435785 0.968447   0.00436508 0.01400301 0.004428  ]
+Logits loss 0.4480329751968384
+[0.01196724 0.00574173 0.89970815 0.00939424 0.06635449 0.00683416]
+Logits loss 0.39540553092956543
+[0.00587966 0.00566484 0.9216372  0.0057274  0.05507299 0.00601796]
+Logits loss 0.3735399544239044
+[0.00794619 0.00758237 0.95304656 0.00774303 0.01590249 0.00777935]
+Logits loss 0.3974800705909729
+[0.00519099 0.00488233 0.93043524 0.00408541 0.05099998 0.00440608]
+Logits loss 0.3792520761489868
+[0.04008828 0.01455002 0.6403798  0.12806098 0.08390382 0.09301711]
+Logits loss 0.40505436062812805
+[0.00520981 0.00522504 0.9733463  0.00488314 0.00647575 0.00485994]
+Logits loss 0.3702593445777893
+[0.00439636 0.00426565 0.9661813  0.0044466  0.01625767 0.00445244]
+Logits loss 0.39670348167419434
+[0.0043691  0.00422549 0.97450733 0.00427354 0.00818281 0.0044416 ]
+Logits loss 0.4350086748600006
+[0.0065029  0.00539993 0.953896   0.01001099 0.01176762 0.01242259]
+Logits loss 0.4546813368797302
+[0.00509608 0.00501971 0.974919   0.00493373 0.00510309 0.00492846]
+Logits loss 0.4093325138092041
+[0.00410519 0.00403624 0.9530145  0.00427439 0.0302035  0.00436619]
+Logits loss 0.39847153425216675
+[0.01202523 0.01054023 0.8976484  0.0322309  0.02980247 0.01775271]
+Logits loss 0.39848557114601135
+[0.00597743 0.00578571 0.96892166 0.00566346 0.00794923 0.00570255]
+Logits loss 0.4328155815601349
+[0.04393975 0.01549483 0.5916142  0.15285407 0.14460467 0.05149249]
+Logits loss 0.43351805210113525
+[0.00569999 0.00587763 0.90711987 0.00614623 0.06903869 0.00611763]
+Logits loss 0.35658034682273865
+[0.0042761  0.00415382 0.96743506 0.00430436 0.01541991 0.00441063]
+Logits loss 0.3722218871116638
+[0.00854552 0.00859994 0.95455486 0.00804979 0.01190311 0.0083469 ]
+Logits loss 0.4178759455680847
+[0.00510934 0.00514233 0.97344345 0.00484198 0.00656813 0.00489466]
+Logits loss 0.37827491760253906
+[0.00407436 0.00404156 0.9730498  0.00404303 0.01068983 0.00410136]
+Logits loss 0.3669726252555847
+[0.00507912 0.00496502 0.974378   0.00491244 0.005732   0.00493349]
+Logits loss 0.37087661027908325
+[0.00525233 0.00509005 0.9741398  0.00504472 0.00540245 0.00507067]
+Logits loss 0.396006315946579
+[0.00546004 0.00523507 0.9624708  0.00518591 0.01636826 0.00527986]
+Logits loss 0.372871994972229
+[0.00597874 0.00589331 0.9642403  0.00600817 0.01200886 0.00587065]
+Logits loss 0.3745999038219452
+[0.00804946 0.00799851 0.9606754  0.00776435 0.00775499 0.00775732]
+Logits loss 0.4359078109264374
+[0.00419437 0.00410529 0.9777025  0.00410211 0.00577601 0.00411976]
+Logits loss 0.36953413486480713
+[0.00473135 0.00464443 0.9734021  0.00442537 0.00826667 0.00453006]
+Logits loss 0.4323638081550598
+[0.01161114 0.01101537 0.92149967 0.01196813 0.0333598  0.01054592]
+Logits loss 0.39309749007225037
+[0.00637721 0.00628266 0.967986   0.00605309 0.00718811 0.00611295]
+Logits loss 0.40233394503593445
+[0.0077633  0.00748116 0.9603285  0.00751248 0.00939114 0.00752323]
+Logits loss 0.4035188555717468
+[0.02576079 0.02487333 0.85229623 0.03171527 0.03826328 0.02709115]
+Logits loss 0.38761886954307556
+[0.00429117 0.00418205 0.9740984  0.00474552 0.0068137  0.00586923]
+Logits loss 0.35369399189949036
+[0.00454796 0.00472637 0.96993107 0.00442073 0.01168268 0.00469113]
+Logits loss 0.3693029284477234
+[0.00757264 0.00744364 0.9625024  0.00711162 0.00817154 0.00719822]
+Logits loss 0.3905077874660492
+[0.0072515  0.00672945 0.9580235  0.00735757 0.01220591 0.00843214]
+timecheck 800
+{'total': 33578561536, 'available': 23960068096, 'percent': 28.6, 'used': 9110499328, 'free': 1414828032, 'active': 11896037376, 'inactive': 18022322176, 'buffers': 1051156480, 'cached': 22002077696, 'shared': 42110976, 'slab': 1849860096}
+Logits loss 0.3813921809196472
+[0.00808098 0.0079672  0.9604742  0.0077212  0.00804542 0.007711  ]
+Logits loss 0.39835602045059204
+[0.01260388 0.00549718 0.641592   0.21502045 0.04659287 0.07869354]
+Logits loss 0.399173378944397
+[0.00558009 0.00551712 0.9722582  0.0052641  0.00609827 0.00528222]
+Logits loss 0.4260422885417938
+[0.00479491 0.00472565 0.9714012  0.00483    0.00940968 0.00483843]
+Logits loss 0.41109055280685425
+[0.00438395 0.0042155  0.9737849  0.00437892 0.00842845 0.00480835]
+Logits loss 0.45052629709243774
+[0.00468515 0.00457084 0.9685053  0.00455193 0.01305041 0.00463629]
+Logits loss 0.3802865743637085
+[0.00509622 0.00488981 0.97074676 0.0049262  0.00934617 0.00499487]
+Logits loss 0.38237929344177246
+[0.00495428 0.00509837 0.9676666  0.00484719 0.01248746 0.00494609]
+Logits loss 0.37888050079345703
+[0.0043944  0.00434234 0.9759414  0.00440422 0.00653622 0.00438147]
+Logits loss 0.3933617174625397
+[0.00430634 0.00416028 0.9710142  0.0043     0.01191603 0.00430313]
+Logits loss 0.4155117869377136
+[0.00571606 0.00568719 0.9679281  0.00600538 0.00886244 0.00580085]
+Logits loss 0.3620496988296509
+[0.01189179 0.01147778 0.94038624 0.01141925 0.01332378 0.0115012 ]
+Logits loss 0.4072950780391693
+[0.00442326 0.00422419 0.9371024  0.00435092 0.04540984 0.00448932]
+Logits loss 0.3719186782836914
+[0.00488929 0.00482813 0.97296417 0.00462175 0.00802146 0.00467514]
+Logits loss 0.39780092239379883
+[0.0040219  0.00395584 0.9704902  0.00401285 0.01345708 0.00406201]
+Logits loss 0.3697255849838257
+[0.00828282 0.00809847 0.9573087  0.00784079 0.01031017 0.00815914]
+Logits loss 0.3970763385295868
+[0.00445281 0.00439041 0.9775489  0.0043224  0.00496441 0.00432099]
+Logits loss 0.3685982823371887
+[0.00465745 0.00460221 0.97688967 0.00452371 0.00480972 0.00451743]
+Logits loss 0.3943949043750763
+[0.00363485 0.00349061 0.85247415 0.00359839 0.13177803 0.00502404]
+Logits loss 0.4165719747543335
+[0.00525169 0.00512694 0.9727171  0.00500427 0.00683892 0.00506114]
+Perturbation Test Algorithm: rainbow Environment: PongNoFrameskip-v4
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Meantime test 1 [-2.0]
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Meantime test 2 [-21.0]
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Meantime test 3 [18.0]
+Average perturbation -7.503440016521618e-05
+Logits loss 0.34427571296691895
+[0.0046708  0.00591105 0.8833213  0.00448849 0.09660878 0.00499966]
+Logits loss 0.42097869515419006
+[0.0132395  0.01044429 0.8917022  0.04143759 0.02442933 0.01874716]
+Logits loss 0.36975395679473877
+[0.00468039 0.00408382 0.9662929  0.00535589 0.01416796 0.00541905]
+Logits loss 0.42774468660354614
+[0.00496096 0.00488497 0.9747028  0.00471679 0.00592155 0.00481302]
+Logits loss 0.3752738833427429
+[0.00534154 0.00503191 0.90284616 0.00504813 0.07666568 0.0050666 ]
+Logits loss 0.3467674255371094
+[0.00581648 0.00550154 0.9689756  0.00565025 0.00829802 0.00575813]
+Logits loss 0.35598668456077576
+[0.00412296 0.00404797 0.97833884 0.00403698 0.00538879 0.00406456]
+Logits loss 0.3669293522834778
+[0.00435261 0.00426354 0.9767741  0.00420016 0.00617493 0.00423469]
+Logits loss 0.38741493225097656
+[0.00456621 0.00449174 0.9725681  0.0046483  0.00911771 0.00460788]
+Logits loss 0.3739269971847534
+[0.00468772 0.00465065 0.9748455  0.00454655 0.00669802 0.00457164]
+Logits loss 0.43621766567230225
+[0.00730161 0.00752041 0.96191967 0.00721083 0.00889205 0.00715549]
+Logits loss 0.3761157989501953
+[0.00897683 0.00616977 0.8695625  0.00872508 0.10039868 0.00616716]
+Logits loss 0.3809314966201782
+[0.00482276 0.00479796 0.96721363 0.00452357 0.01406854 0.00457353]
+Logits loss 0.36509209871292114
+[0.00423627 0.00416208 0.9739809  0.00419185 0.00920756 0.00422147]
+Logits loss 0.3685693144798279
+[0.00607972 0.00627999 0.9665136  0.00618523 0.00885875 0.00608283]
+Logits loss 0.3542673587799072
+[0.00405748 0.00399505 0.97666055 0.00403833 0.00710845 0.00413999]
+Logits loss 0.3724624812602997
+[0.01237727 0.0122636  0.939442   0.01152167 0.01270031 0.01169513]
+Logits loss 0.37583985924720764
+[0.00548945 0.00408599 0.89703745 0.00492245 0.08320419 0.00526057]
+Logits loss 0.4403914213180542
+[0.00438028 0.00432495 0.97744024 0.0043152  0.00523263 0.00430674]
+Logits loss 0.42645108699798584
+[0.00474856 0.00467917 0.97246665 0.00461837 0.00880694 0.00468023]
+Logits loss 0.36308032274246216
+[0.00424173 0.00414784 0.9757043  0.00454747 0.00610656 0.00525208]
+Logits loss 0.4247972369194031
+[0.00528833 0.00509757 0.9664484  0.00519627 0.01248226 0.00548703]
+Logits loss 0.422894150018692
+[0.00681807 0.00672296 0.96680975 0.006596   0.00650048 0.00655269]
+Logits loss 0.39286768436431885
+[0.0051503  0.00527131 0.97222036 0.00488316 0.00759045 0.00488438]
+Logits loss 0.42866912484169006
+[0.00419516 0.00409312 0.96679884 0.00421234 0.01649386 0.00420664]
+Logits loss 0.4407597780227661
+[0.07102432 0.06901658 0.63160354 0.06460171 0.0982708  0.06548307]
+Logits loss 0.3917306959629059
+[0.00402445 0.00393479 0.9699023  0.00393232 0.01419474 0.00401146]
+Logits loss 0.36647409200668335
+[0.00862664 0.0085637  0.95725334 0.00809255 0.0091981  0.00826574]
+Logits loss 0.37559497356414795
+[0.00464926 0.00457159 0.97616065 0.00454601 0.0055172  0.00455535]
+Logits loss 0.4187328815460205
+[0.00539154 0.00510251 0.9681534  0.00571351 0.0088571  0.00678183]
+timecheck 900
+{'total': 33578561536, 'available': 24003760128, 'percent': 28.5, 'used': 9066782720, 'free': 1485058048, 'active': 11852312576, 'inactive': 17998110720, 'buffers': 1051025408, 'cached': 21975695360, 'shared': 42110976, 'slab': 1849593856}
+Logits loss 0.3956104815006256
+[0.00393136 0.00386508 0.97429997 0.00386588 0.01010576 0.00393205]
+Logits loss 0.373923659324646
+[0.00529927 0.00465243 0.95057803 0.00473817 0.0295948  0.00513729]
+Logits loss 0.36443591117858887
+[0.00467842 0.0045926  0.97554976 0.00449592 0.00620511 0.00447816]
+Logits loss 0.3985685706138611
+[0.0060586  0.00551839 0.92316335 0.00488665 0.0549323  0.00544079]
+Logits loss 0.40282249450683594
+[0.00411619 0.00473561 0.92688644 0.00413457 0.05588809 0.00423905]
+Logits loss 0.40139585733413696
+[0.00521607 0.00442204 0.8726362  0.00424241 0.10807981 0.00540348]
+Logits loss 0.42820826172828674
+[0.00507471 0.00478879 0.96230346 0.00483721 0.01813985 0.00485606]
+Logits loss 0.3798763155937195
+[0.00480069 0.00458788 0.97256494 0.00519032 0.00653326 0.00632286]
+Logits loss 0.3722192943096161
+[0.00507042 0.00493371 0.9745049  0.00488512 0.00570086 0.00490513]
+Logits loss 0.38088566064834595
+[0.00423721 0.00414408 0.97117203 0.00420947 0.0119694  0.00426783]
+Logits loss 0.40493252873420715
+[0.00494659 0.00646166 0.8989971  0.00477614 0.07975063 0.00506783]
+Logits loss 0.3809172511100769
+[0.00475455 0.00435903 0.94582945 0.00447414 0.03588172 0.00470107]
+Logits loss 0.41479119658470154
+[0.01482152 0.01236898 0.90587    0.02748036 0.02067115 0.01878786]
+Logits loss 0.38527122139930725
+[0.00502001 0.00502449 0.973612   0.00491511 0.00639584 0.0050326 ]
+Logits loss 0.3683493137359619
+[0.0060643  0.00584997 0.9478047  0.00614276 0.02785749 0.00628072]
+Logits loss 0.37453532218933105
+[0.00524687 0.00510401 0.96341693 0.0050757  0.01596791 0.00518847]
+Logits loss 0.43255603313446045
+[0.00555336 0.00579013 0.92814267 0.00586993 0.04880616 0.00583779]
+Logits loss 0.3881757855415344
+[0.00580809 0.00602001 0.96225077 0.005962   0.01384848 0.00611056]
+Logits loss 0.3943730890750885
+[0.00416113 0.00395938 0.9468189  0.00400593 0.03695365 0.00410103]
+Logits loss 0.36994001269340515
+[0.00592992 0.00415469 0.9112336  0.00806576 0.0604032  0.01021272]
+Logits loss 0.3562758266925812
+[0.01240682 0.00587087 0.60573685 0.23451895 0.04223485 0.09923176]
+Logits loss 0.3722357749938965
+[0.00555113 0.00531277 0.9480873  0.00552042 0.02983254 0.00569589]
+Logits loss 0.4298308491706848
+[0.00705923 0.00658077 0.96262944 0.00763028 0.00889258 0.00720776]
+Logits loss 0.4144068956375122
+[0.03346045 0.03487469 0.82782775 0.03209165 0.04015778 0.0315876 ]
+Logits loss 0.41805052757263184
+[0.00481536 0.00464522 0.9719828  0.0045272  0.00932651 0.00470278]
+Logits loss 0.3912619948387146
+[0.00440311 0.0043221  0.97736883 0.00431013 0.00527358 0.0043223 ]
+Logits loss 0.39996451139450073
+[0.00589659 0.00572238 0.9699715  0.00563324 0.00706499 0.00571147]
+Logits loss 0.381938636302948
+[0.01045059 0.01028442 0.93707186 0.01038341 0.02117168 0.01063802]
+Logits loss 0.37511545419692993
+[0.00478148 0.00468899 0.97555166 0.00460847 0.00572751 0.00464178]
+Logits loss 0.37240391969680786
+[0.0043894  0.00429288 0.9725877  0.00427455 0.01015417 0.00430134]
+Perturbation Test Algorithm: rainbow Environment: PongNoFrameskip-v4
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Meantime test 1 [-7.0]
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Meantime test 2 [-21.0]
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Meantime test 3 [16.0]
+Average perturbation -0.00012378698709059735
+Logits loss 0.4265708327293396
+[0.00409162 0.00403566 0.9584735  0.00400994 0.02516673 0.00422257]
+Logits loss 0.4696138799190521
+[0.00492396 0.0050097  0.9672163  0.00479562 0.01321258 0.00484187]
+Logits loss 0.3747864067554474
+[0.0041799  0.00406884 0.9763287  0.00408662 0.00714373 0.00419229]
+Logits loss 0.4150969088077545
+[0.00473229 0.00468502 0.9748556  0.00461946 0.00638212 0.00472555]
+Logits loss 0.4415532052516937
+[0.00653623 0.00652131 0.96748143 0.00617195 0.00705553 0.00623366]
+Logits loss 0.3956034779548645
+[0.00399563 0.00394571 0.97622377 0.00396504 0.0077302  0.00413965]
+Logits loss 0.3472456634044647
+[0.00723705 0.00744667 0.9481806  0.00809596 0.02124307 0.00779664]
+Logits loss 0.42620381712913513
+[0.01232384 0.01209554 0.9363869  0.01151089 0.01619817 0.01148468]
+Logits loss 0.4214339852333069
+[0.00387035 0.00379492 0.97246563 0.00384297 0.01170612 0.00431997]
+Logits loss 0.41288575530052185
+[0.00490283 0.00407571 0.90794843 0.0050978  0.0729173  0.00505801]
+Logits loss 0.3929780125617981
+[0.00851855 0.00837614 0.9514477  0.00849206 0.01488892 0.00827655]
+Logits loss 0.45241886377334595
+[0.00756389 0.00706355 0.9301091  0.00822014 0.03955222 0.00749116]
+Logits loss 0.4015907645225525
+[0.00486494 0.00469988 0.8929494  0.00450014 0.08838627 0.00459944]
+Logits loss 0.3792922794818878
+[0.00426769 0.00419135 0.978327   0.00414165 0.0048843  0.00418802]
+Logits loss 0.3813323974609375
+[0.00487882 0.00488355 0.9729926  0.00494686 0.00741951 0.00487869]
+Logits loss 0.3797055184841156
+[0.00642985 0.00659963 0.96673334 0.00653205 0.00725209 0.00645323]
+Logits loss 0.38608303666114807
+[0.00629543 0.00617067 0.8992956  0.00619514 0.07560863 0.00643465]
+Logits loss 0.4090482294559479
+[0.01357724 0.01325567 0.9233217  0.0127266  0.02447353 0.01264519]
+Logits loss 0.42281442880630493
+[0.01029864 0.0093093  0.8671025  0.01232791 0.09201489 0.00894684]
+Logits loss 0.40137869119644165
+[0.00509518 0.00521276 0.89030993 0.00486193 0.08892234 0.00559774]
+timecheck 1000
+{'total': 33578561536, 'available': 23993511936, 'percent': 28.5, 'used': 9077030912, 'free': 1474760704, 'active': 11861524480, 'inactive': 17997967360, 'buffers': 1051058176, 'cached': 21975711744, 'shared': 42110976, 'slab': 1849741312}
+Logits loss 0.38167476654052734
+[0.00486838 0.00476633 0.97594917 0.00470606 0.00500234 0.00470767]
+Logits loss 0.38529330492019653
+[0.00527827 0.00541714 0.972039   0.0049649  0.00733562 0.00496503]
+Logits loss 0.3763349652290344
+[0.01163444 0.01152819 0.8624102  0.01149997 0.09078552 0.01214176]
+Logits loss 0.36094674468040466
+[0.01778824 0.01714323 0.6509427  0.01810989 0.27707812 0.01893784]
+Logits loss 0.38487738370895386
+[0.00557705 0.00566379 0.9703143  0.005458   0.00757665 0.00541013]
+Logits loss 0.41190385818481445
+[0.00734193 0.0071999  0.96328825 0.00701805 0.00816451 0.00698731]
+Logits loss 0.40646302700042725
+[0.01618163 0.01535052 0.92049325 0.01524039 0.01724117 0.01549293]
+Logits loss 0.4087474048137665
+[0.00615082 0.00560588 0.96142787 0.00673256 0.01232075 0.00776211]
+Logits loss 0.40826067328453064
+[0.00644207 0.00628542 0.9628281  0.00608184 0.01208978 0.00627273]
+Logits loss 0.37070950865745544
+[0.00484478 0.0047235  0.97471005 0.00467063 0.00636846 0.00468251]
+Logits loss 0.3942908048629761
+[0.00539502 0.00545769 0.9676233  0.00539636 0.01082257 0.00530507]
+Logits loss 0.4326266944408417
+[0.04605785 0.04781636 0.7739196  0.04410804 0.04415194 0.04394628]
+Logits loss 0.4032529592514038
+[0.00409904 0.00408155 0.9784329  0.00398456 0.00536941 0.0040325 ]
+Logits loss 0.4023633301258087
+[0.00392118 0.00387668 0.9790612  0.00384699 0.00540248 0.00389148]
+Logits loss 0.37851351499557495
+[0.0056793  0.00549554 0.95568943 0.00536384 0.02235267 0.00541913]
+Logits loss 0.38821786642074585
+[0.00493664 0.00486596 0.97571975 0.0047747  0.00492677 0.00477625]
+Logits loss 0.41880208253860474
+[0.0065682  0.00667995 0.95794463 0.00684563 0.01518105 0.00678059]
+Logits loss 0.41699445247650146
+[0.0095191  0.00967708 0.9507733  0.00931985 0.01144344 0.00926721]
+Logits loss 0.400267094373703
+[0.00455876 0.00449505 0.9770353  0.00444408 0.00501233 0.00445447]
+Logits loss 0.3862359821796417
+[0.00421116 0.00415501 0.97729194 0.00417988 0.00589424 0.00426787]
+Logits loss 0.41857683658599854
+[0.0061892  0.00650719 0.96732926 0.00608625 0.007847   0.00604095]
+Logits loss 0.3912152647972107
+[0.01947401 0.01944747 0.79961133 0.02126851 0.11956217 0.0206364 ]
+Logits loss 0.36686304211616516
+[0.0044106  0.00436452 0.9776588  0.00428926 0.00499116 0.00428563]
+Logits loss 0.37284642457962036
+[0.00467933 0.00471972 0.9488205  0.00478362 0.03218617 0.00481071]
+Logits loss 0.39459797739982605
+[0.00788787 0.00823834 0.8866306  0.00681106 0.08268863 0.00774346]
+Logits loss 0.36070516705513
+[0.00497228 0.00484024 0.9724302  0.00483876 0.00807719 0.00484135]
+Logits loss 0.40796205401420593
+[0.00634492 0.00886337 0.8455652  0.00482538 0.128812   0.0055891 ]
+Logits loss 0.4010300040245056
+[0.00455124 0.00474776 0.97320807 0.00435601 0.00874561 0.00439132]
+Logits loss 0.4313106834888458
+[0.01027269 0.01050728 0.8780236  0.01042828 0.08046148 0.01030671]
+Logits loss 0.4412285089492798
+[0.00451603 0.00446577 0.9771742  0.00436943 0.00506029 0.00441417]
+Logits loss 0.41997307538986206
+[0.00451495 0.00446745 0.974939   0.0044331  0.00721241 0.00443321]
+Logits loss 0.39163637161254883
+[0.00507296 0.00489461 0.9584212  0.00500635 0.02142088 0.00518408]
+Logits loss 0.3914378583431244
+[0.01967862 0.02027818 0.9023617  0.01905986 0.01938361 0.01923797]
+Logits loss 0.3779553174972534
+[0.00545334 0.00552776 0.9713505  0.00533791 0.00698594 0.00534463]
+Logits loss 0.37176236510276794
+[0.00570627 0.00576686 0.97191757 0.0053864  0.00582524 0.00539761]
+Logits loss 0.41652482748031616
+[0.00417941 0.00410627 0.9771689  0.00412274 0.00629626 0.00412644]
+Logits loss 0.3891644775867462
+[0.0076009  0.00737581 0.93564826 0.00760532 0.03412711 0.00764252]
+Logits loss 0.42712438106536865
+[0.00999938 0.01025349 0.9448144  0.00917265 0.01642778 0.00933234]
+Logits loss 0.37387725710868835
+[0.00724374 0.00698091 0.96124905 0.00687685 0.01063069 0.00701873]
+Logits loss 0.40465766191482544
+[0.00436309 0.00430412 0.9560105  0.00459301 0.02623364 0.00449554]
+Perturbation Test Algorithm: rainbow Environment: PongNoFrameskip-v4
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Meantime test 1 [-7.0]
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Meantime test 2 [-21.0]
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Meantime test 3 [-21.0]
+Average perturbation -9.342046484114631e-05
+Logits loss 0.41292333602905273
+[0.00467232 0.00445349 0.9157998  0.00450737 0.0642748  0.0062922 ]
+Logits loss 0.3953794240951538
+[0.00451495 0.00434918 0.97000194 0.00675677 0.00942444 0.0049527 ]
+Logits loss 0.36916813254356384
+[0.02502687 0.02444073 0.85901994 0.02488755 0.0422289  0.02439601]
+Logits loss 0.37493598461151123
+[0.00552751 0.00536045 0.97041774 0.00525074 0.00818711 0.00525647]
+Logits loss 0.3763813078403473
+[0.00443616 0.00399783 0.97322625 0.00726374 0.00425096 0.00682502]
+Logits loss 0.41946789622306824
+[0.00487065 0.00486947 0.9619264  0.00490903 0.01858896 0.00483547]
+Logits loss 0.41251954436302185
+[0.0045633  0.00430426 0.9742367  0.00427528 0.00819758 0.00442279]
+Logits loss 0.43529975414276123
+[0.00504443 0.0050221  0.9203112  0.00494927 0.05959742 0.00507562]
+Logits loss 0.4136106073856354
+[0.00688468 0.00691772 0.96455383 0.00637266 0.00876778 0.00650338]
+Logits loss 0.4120631515979767
+[0.00341338 0.00332061 0.87993217 0.0033196  0.10661677 0.00339739]
+timecheck 1100
+{'total': 33578561536, 'available': 23947141120, 'percent': 28.7, 'used': 9123377152, 'free': 1455235072, 'active': 11908571136, 'inactive': 17974312960, 'buffers': 1050910720, 'cached': 21949038592, 'shared': 42110976, 'slab': 1848918016}
+Logits loss 0.43256664276123047
+[0.00969526 0.00950544 0.9525697  0.00899155 0.0100775  0.00916057]
+Logits loss 0.3775862455368042
+[0.00461617 0.00448402 0.97611    0.00446958 0.00580966 0.00451062]
+Logits loss 0.38974884152412415
+[0.00465319 0.00455299 0.9691151  0.00463859 0.0123773  0.00466289]
+Logits loss 0.3782772719860077
+[0.00519027 0.0050988  0.9719153  0.00505252 0.00740919 0.00533386]
+Logits loss 0.38986608386039734
+[0.00970235 0.00927473 0.93757015 0.00947686 0.02475804 0.00921787]
+Logits loss 0.417130708694458
+[0.00603811 0.00590682 0.9620523  0.00577395 0.01431238 0.00591635]
+Logits loss 0.4411546587944031
+[0.00603962 0.0058799  0.9687571  0.00569539 0.00782611 0.00580197]
+Logits loss 0.38786977529525757
+[0.00665379 0.00687265 0.9665577  0.00641797 0.0070878  0.00641007]
+Logits loss 0.4279481768608093
+[0.00607668 0.00608439 0.9663234  0.00567157 0.01014717 0.00569676]
+Logits loss 0.4105919301509857
+[0.01674597 0.01586271 0.87491345 0.01902416 0.05475079 0.01870294]
+Logits loss 0.4231351613998413
+[0.00648238 0.00663278 0.95577925 0.00672019 0.01772476 0.00666073]
+Logits loss 0.3923492431640625
+[0.00465434 0.00467104 0.9757823  0.00462709 0.00566514 0.00460015]
+Logits loss 0.40616318583488464
+[0.00447402 0.00439509 0.9710035  0.00448795 0.0111799  0.00445959]
+Logits loss 0.39190810918807983
+[0.0049011  0.00479984 0.9755476  0.00471799 0.00531427 0.0047192 ]
+Logits loss 0.3892475962638855
+[0.00463925 0.0046198  0.9768118  0.00451382 0.00487443 0.00454096]
+Logits loss 0.3579765558242798
+[0.00733551 0.00776688 0.9336558  0.00768166 0.03574359 0.00781662]
+Logits loss 0.415402889251709
+[0.00615157 0.00539307 0.8500227  0.00717427 0.12552279 0.00573559]
+Logits loss 0.3929612636566162
+[0.00669685 0.00632031 0.9507441  0.00645859 0.02295064 0.00682958]
+Logits loss 0.4408460855484009
+[0.00560934 0.00542829 0.9646528  0.00551388 0.01296577 0.00582998]
+Logits loss 0.4453555941581726
+[0.01267309 0.00618081 0.5422155  0.2555516  0.07394253 0.1094364 ]
+Logits loss 0.395605206489563
+[0.00468749 0.0046626  0.9719463  0.00463604 0.00941576 0.00465185]
+Logits loss 0.43072614073753357
+[0.00476248 0.00377972 0.9122411  0.00499753 0.06908108 0.0051381 ]
+Logits loss 0.4426781237125397
+[0.00665475 0.00637862 0.9475136  0.0060926  0.02717458 0.0061858 ]
+Logits loss 0.45288246870040894
+[0.0063778  0.00603557 0.96712387 0.00600992 0.00842324 0.00602953]
+Logits loss 0.3942350149154663
+[0.00475109 0.00473058 0.9742983  0.00464577 0.0068093  0.00476494]
+Logits loss 0.42562946677207947
+[0.00607454 0.00600334 0.96625185 0.00581479 0.00990322 0.00595219]
+Logits loss 0.3906603455543518
+[0.00499791 0.0050317  0.9724281  0.00474848 0.00798536 0.00480849]
+Logits loss 0.4158208966255188
+[0.00384441 0.0037472  0.9754754  0.00374729 0.00938081 0.00380503]
+Logits loss 0.4095940589904785
+[0.00479941 0.00470369 0.97597927 0.00467239 0.00515233 0.00469289]
+Logits loss 0.4035608470439911
+[0.00776365 0.00875539 0.9253878  0.00765438 0.04157566 0.00886312]
+Logits loss 0.4077660143375397
+[0.01383425 0.01405941 0.924864   0.01323274 0.02040623 0.01360335]
+Logits loss 0.4035129249095917
+[0.00426979 0.00420897 0.9739731  0.00424501 0.00900562 0.00429757]
+Logits loss 0.3844529688358307
+[0.00497364 0.00497722 0.94996756 0.00523514 0.02889095 0.00595558]
+Logits loss 0.42879781126976013
+[0.20622775 0.09796709 0.22387502 0.11522551 0.13151403 0.22519071]
+Logits loss 0.4202849864959717
+[0.00448968 0.00442914 0.97677064 0.00436215 0.0055022  0.00444613]
+Logits loss 0.4250061810016632
+[0.0112949  0.01056918 0.82358545 0.010734   0.13255008 0.01126648]
+Logits loss 0.44160640239715576
+[0.00447115 0.00431846 0.9736143  0.00433203 0.00885121 0.00441272]
+Logits loss 0.4155534505844116
+[0.00449747 0.0044696  0.95531255 0.00461132 0.02653097 0.00457806]
+Logits loss 0.41213497519493103
+[0.00608766 0.00620205 0.95987517 0.00611261 0.01561235 0.00611007]
+Logits loss 0.40741199254989624
+[0.00544884 0.00561842 0.96927536 0.00555575 0.00862858 0.00547312]
+Logits loss 0.40089151263237
+[0.00630546 0.00611867 0.9097786  0.00622316 0.0647435  0.00683056]
+Logits loss 0.4437428116798401
+[0.00703662 0.00655632 0.92547184 0.00698503 0.04758291 0.00636738]
+Logits loss 0.39296430349349976
+[0.00667333 0.00643978 0.9396111  0.00674845 0.03362701 0.00690047]
+Logits loss 0.4017293155193329
+[0.00432631 0.00423579 0.9704357  0.00437884 0.01229677 0.00432674]
+Logits loss 0.39876794815063477
+[0.00623097 0.00618067 0.96320224 0.00594317 0.01230272 0.00614023]
+Logits loss 0.36357998847961426
+[0.004608   0.00452115 0.97661906 0.00448674 0.00525192 0.00451306]
+Logits loss 0.38301822543144226
+[0.00911345 0.00894283 0.9522451  0.00915738 0.01161254 0.00892872]
+Logits loss 0.36786144971847534
+[0.00597921 0.00573998 0.96984416 0.00564532 0.00712762 0.00566375]
+Logits loss 0.4079447388648987
+[0.0096432  0.01019657 0.8366859  0.00991149 0.1230111  0.01055153]
+Logits loss 0.40812069177627563
+[0.004589   0.00443248 0.9674004  0.00453837 0.01449329 0.00454636]
+timecheck 1200
+{'total': 33578561536, 'available': 23942778880, 'percent': 28.7, 'used': 9127739392, 'free': 1450844160, 'active': 11907563520, 'inactive': 17974325248, 'buffers': 1050927104, 'cached': 21949050880, 'shared': 42110976, 'slab': 1848819712}
+Perturbation Test Algorithm: rainbow Environment: PongNoFrameskip-v4
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Meantime test 1 [-2.0]
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Meantime test 2 [-21.0]
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Meantime test 3 [16.0]
+Average perturbation -0.00010201750563926437
+We have perturbation for case rainbow pong 0 0_01

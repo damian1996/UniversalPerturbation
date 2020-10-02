@@ -1,0 +1,307 @@
+Now lr: 0.0001
+/home/dstachura/UniversalPerturbation/src
+/home/dstachura/UniversalPerturbation/src
+[array([-19., -20., -20.])]
+/home/dstachura/UniversalPerturbation/src
+/home/dstachura/UniversalPerturbation/src
+[array([21., 21., 21.])]
+NR EPOCH 0
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.09491525423728814
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1798, 84, 84, 4) (1798,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.03389830508474577
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1784, 84, 84, 4) (1784,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.07966101694915255
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1858, 84, 84, 4) (1858,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.028813559322033902
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1632, 84, 84, 4) (1632,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.15
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (2406, 84, 84, 4) (2406,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.05084745762711865
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1821, 84, 84, 4) (1821,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.06949152542372881
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1893, 84, 84, 4) (1893,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.09830508474576272
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1762, 84, 84, 4) (1762,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.025423728813559324
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1650, 84, 84, 4) (1650,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.04067796610169492
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1651, 84, 84, 4) (1651,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.01016949152542373
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1650, 84, 84, 4) (1650,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.02033898305084746
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1863, 84, 84, 4) (1863,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.13125
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (2132, 84, 84, 4) (2132,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.07288135593220339
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1838, 84, 84, 4) (1838,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.04576271186440679
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1723, 84, 84, 4) (1723,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.10625000000000001
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (2500, 84, 84, 4) (2500,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.09322033898305086
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1854, 84, 84, 4) (1854,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.04915254237288136
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1706, 84, 84, 4) (1706,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.06610169491525425
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (2324, 84, 84, 4) (2324,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.03898305084745763
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1684, 84, 84, 4) (1684,)
+Iteration 1
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.0016949152542372883
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1632, 84, 84, 4) (1632,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.03220338983050848
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1990, 84, 84, 4) (1990,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.08305084745762713
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1858, 84, 84, 4) (1858,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.03559322033898305
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1826, 84, 84, 4) (1826,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.1125
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (2275, 84, 84, 4) (2275,)
+Iteration 2
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.1375
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (2500, 84, 84, 4) (2500,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.03050847457627119
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1689, 84, 84, 4) (1689,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.0
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1632, 84, 84, 4) (1632,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.125
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (2419, 84, 84, 4) (2419,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.01864406779661017
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1633, 84, 84, 4) (1633,)
+Iteration 3
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.0440677966101695
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (2144, 84, 84, 4) (2144,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.023728813559322035
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1892, 84, 84, 4) (1892,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.06440677966101696
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (2016, 84, 84, 4) (2016,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.0033898305084745766
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1632, 84, 84, 4) (1632,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.05932203389830509
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (2005, 84, 84, 4) (2005,)
+Iteration 4
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.054237288135593226
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1668, 84, 84, 4) (1668,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.06271186440677967
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1816, 84, 84, 4) (1816,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.0711864406779661
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1940, 84, 84, 4) (1940,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.08474576271186442
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1998, 84, 84, 4) (1998,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.09152542372881357
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (2023, 84, 84, 4) (2023,)
+Iteration 5
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.013559322033898306
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1867, 84, 84, 4) (1867,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.08983050847457628
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (2138, 84, 84, 4) (2138,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.005084745762711865
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1632, 84, 84, 4) (1632,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.06101694915254238
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1664, 84, 84, 4) (1664,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.04237288135593221
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1670, 84, 84, 4) (1670,)
+Iteration 6
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.07796610169491526
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1871, 84, 84, 4) (1871,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.14375
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1800, 84, 84, 4) (1800,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.088135593220339
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1968, 84, 84, 4) (1968,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.055932203389830515
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1853, 84, 84, 4) (1853,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.057627118644067804
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1824, 84, 84, 4) (1824,)
+Iteration 7
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.06779661016949154
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (2126, 84, 84, 4) (2126,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.011864406779661017
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1649, 84, 84, 4) (1649,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.09661016949152543
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1966, 84, 84, 4) (1966,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.015254237288135596
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1741, 84, 84, 4) (1741,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.05254237288135594
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (2283, 84, 84, 4) (2283,)
+Iteration 8
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.006779661016949153
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1668, 84, 84, 4) (1668,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.08135593220338984
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1822, 84, 84, 4) (1822,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.07457627118644068
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1834, 84, 84, 4) (1834,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.008474576271186442
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1711, 84, 84, 4) (1711,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.016949152542372885
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1777, 84, 84, 4) (1777,)
+Iteration 9
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.0864406779661017
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (2262, 84, 84, 4) (2262,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.1
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (2308, 84, 84, 4) (2308,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.07627118644067797
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1815, 84, 84, 4) (1815,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.04745762711864407
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1916, 84, 84, 4) (1916,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.03728813559322034
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1959, 84, 84, 4) (1959,)
+Iteration 10
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.02203389830508475
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1632, 84, 84, 4) (1632,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.11875
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (2344, 84, 84, 4) (2344,)
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 Tag: final Eps: 0.027118644067796613
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Shapes (1632, 84, 84, 4) (1632,)
+Iteration 11
+Algorithm: rainbow Environment: PongNoFrameskip-v4 Run Id: 2 NrPert: 0 Noise max: 0.005
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Actions loss -1.7629590034484863
+Perturbation Test Algorithm: rainbow Environment: PongNoFrameskip-v4
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Meantime test 1 [21.0]
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Meantime test 2 [20.0]
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Meantime test 3 [21.0]
+Actions loss -1.9070396423339844
+Perturbation Test Algorithm: rainbow Environment: PongNoFrameskip-v4
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Meantime test 1 [20.0]
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Meantime test 2 [-21.0]
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Meantime test 3 [21.0]
+Actions loss -1.8885607719421387
+Perturbation Test Algorithm: rainbow Environment: PongNoFrameskip-v4
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Meantime test 1 [21.0]
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Meantime test 2 [-21.0]
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Meantime test 3 [21.0]
+Actions loss -1.890202522277832
+Perturbation Test Algorithm: rainbow Environment: PongNoFrameskip-v4
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Meantime test 1 [21.0]
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Meantime test 2 [-21.0]
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Meantime test 3 [21.0]
+Actions loss -1.9171216487884521
+Perturbation Test Algorithm: rainbow Environment: PongNoFrameskip-v4
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Meantime test 1 [18.0]
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Meantime test 2 [-21.0]
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Meantime test 3 [21.0]
+Actions loss -1.8482575416564941
+Actions loss -1.8686113357543945
+Perturbation Test Algorithm: rainbow Environment: PongNoFrameskip-v4
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Meantime test 1 [19.0]
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Meantime test 2 [-21.0]
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Meantime test 3 [21.0]
+Actions loss -1.8875019550323486
+Perturbation Test Algorithm: rainbow Environment: PongNoFrameskip-v4
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Meantime test 1 [21.0]
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Meantime test 2 [-21.0]
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Meantime test 3 [21.0]
+Actions loss -1.83992338180542
+Perturbation Test Algorithm: rainbow Environment: PongNoFrameskip-v4
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Meantime test 1 [20.0]
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Meantime test 2 [-21.0]
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Meantime test 3 [21.0]
+Actions loss -1.8797826766967773
+Perturbation Test Algorithm: rainbow Environment: PongNoFrameskip-v4
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Meantime test 1 [12.0]
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Meantime test 2 [-21.0]
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Meantime test 3 [21.0]
+Actions loss -1.8865892887115479
+Perturbation Test Algorithm: rainbow Environment: PongNoFrameskip-v4
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Meantime test 1 [20.0]
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Meantime test 2 [-21.0]
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.uint8'>. Please provide explicit dtype.[0m
+Meantime test 3 [21.0]
+We have perturbation for case rainbow pong 0 0_005

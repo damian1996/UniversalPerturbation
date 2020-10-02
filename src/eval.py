@@ -22,7 +22,6 @@ from tensorflow.python.client import device_lib
 
 # policy_id jest w przedziale [1,3], a nie od 0 :P
 def eval_perturbation(game_name, algo, policy_id, perturbation=None, normalize_or_not=False, random_act=False):
-    game_name = game_name[0].capitalize() + game_name[1:].lower()
     env = f"{game_name}NoFrameskip-v4"
     batch_size = 128
     run_ids = [0,1,2,3]
@@ -42,7 +41,6 @@ def eval_perturbation(game_name, algo, policy_id, perturbation=None, normalize_o
         return results_final['ep_rewards'][0]
 
 def eval_perturbation_for_all_policies(game_name, algo, perturbation=None, normalize_or_not=False, random_act=False):
-    game_name = game_name[0].capitalize() + game_name[1:].lower()
     env = f"{game_name}NoFrameskip-v4"
     batch_size = 128
     run_ids = [0,1,2,3]
@@ -72,7 +70,7 @@ if __name__ == "__main__":
     normalize_or_not=True
     nr_runs = 1
     perturbation = None
-
+    '''
     results = eval_perturbation(
         game_name, 
         algo, 
@@ -89,3 +87,17 @@ if __name__ == "__main__":
         normalize_or_not=normalize_or_not,
         random_act=random_act
     )
+    '''
+    random_pert = rpg.generate_random_perturbation(0.01, 17)
+    
+    games = ["Assault"] # utils.get_sampled_games()
+    print(games)
+    for game_name in games:
+        results = eval_perturbation(
+            game_name,
+            "rainbow",
+            1,
+            perturbation=random_pert
+        )
+        print(game_name, results)
+    

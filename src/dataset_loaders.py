@@ -177,6 +177,61 @@ class TrajectoriesLoader():
         return (np.load(f"{self.saved_trajectories}/obs{it}.npy"), np.load(f"{self.saved_trajectories}/act{it}.npy"), np.load(f"{self.saved_trajectories}/labels{it}.npy")), last_update
 
 
+class DatasetInChunksLoader():
+
+    def __init__(self, envs, algo, multi_game, nr_policy, seed, saved_trajectories = "./saved_trajectories"):
+        self.rep_buffer = ReplayBuffer(envs, nr_policy, seed, multi_game=multi_game)
+        self.saved_trajectories = saved_trajectories
+
+        self.epsilons = get_epsilons_for_explorations((60, 9))
+        self.all_training_cases = np.array([(game, eps) for eps in self.epsilons for game in envs])
+        print(self.epsilons)
+
+        np.random.shuffle(self.all_training_cases)
+
+        self.it = 1
+        self.save_buffer_in_parts(algo=algo, epsilons=self.epsilons)
+        
+    def save_buffer_in_parts(self, algo=None, epsilons=None):
+        # save initial buffer
+        observations, actions, game_labels = self.rep_buffer.generate_initial_dataset(self.all_training_cases, algo)
+        utils.fix_path()
+        
+        if not os.path.exists(self.saved_trajectories):
+            os.mkdir(self.saved_trajectories) 
+        
+        np.save(open(f'{self.saved_trajectories}/obs0.npy', 'wb'), observations)
+        np.save(open(f'{self.saved_trajectories}/act0.npy', 'wb'), actions)
+        np.save(open(f'{self.saved_trajectories}/labels0.npy', 'wb'), game_labels)
+
+        # save updated buffers
+        dataset = (observations, actions, game_labels)
+        
+        while True:
+            print(f"Iteration {self.it}") 
+            new_cases = self.rep_buffer.get_new_cases(self.all_training_cases)
+            
+            if len(new_cases) == 0:
+                break
+
+            observations, actions, game_labels = self.rep_buffer.generate_trajectories_for_given_cases(new_cases, algo) 
+            
+            np.save(open(f'{self.saved_trajectories}/obs{self.it}.npy', 'wb'), observations)
+            np.save(open(f'{self.saved_trajectories}/act{self.it}.npy', 'wb'), actions)
+            np.save(open(f'{self.saved_trajectories}/labels{self.it}.npy', 'wb'), game_labels)
+            
+            self.it += 1
+            
+            self.rep_buffer.update_counter()
+
+    def get_initial_buffer(self):
+        return (np.load(f"{self.saved_trajectories}/obs0.npy"), np.load(f"{self.saved_trajectories}/act0.npy"), np.load(f"{self.saved_trajectories}/labels0.npy")), False
+
+    def get_updated_buffer(self, it):
+        last_update = (it == (self.it-1))
+        return (np.load(f"{self.saved_trajectories}/obs{it}.npy"), np.load(f"{self.saved_trajectories}/act{it}.npy"), np.load(f"{self.saved_trajectories}/labels{it}.npy")), last_update
+
+
 class FullDatasetLoader():
 
     def __init__(self, envs, batch_size, algo, seed, multi_game=False):

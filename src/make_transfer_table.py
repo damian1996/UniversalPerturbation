@@ -105,11 +105,6 @@ def main(log_path, args, use_buffer=True):
                             s_max_noise = str(max_noise).replace(".", "_")
 
                             if mode == "trained":
-                                #if os.path.exists(f"{pert_path}/pert.npy"): 
-                                #    print("Pert already exists")
-                                #    perturbation = np.load(f"{pert_path}/pert.npy")
-                                #else:
-                                
                                 print(f"Algorithm: {algo} Environment: {env} Run Id: {run_ids[2]} NrPert: {nr_pert} Noise max: {max_noise}")
                                 m = MakeAtariModel(algo,env,run_ids[2],tag="final")()
                                 
@@ -133,8 +128,6 @@ def main(log_path, args, use_buffer=True):
                                             loader=loader, n_repeats=repeats, seed=args.seed, pert_for_next_epoch=current_pert)
                                 
                                 perturbation = results_noise["perturbation"] 
-                                #open(f"{pert_path}/pert.npy", 'a').close()
-                                #np.save(open(f"{pert_path}/pert.npy", "wb"), perturbation)
                             
                             elif mode == "random":
                                 print(f"{log_path}/random/random_perts")

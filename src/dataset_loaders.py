@@ -299,3 +299,33 @@ class FullDatasetLoader():
         numbers = self.rng.choice(self.actions.shape[0], size=self.batch_size, replace=False)
  
         return self.observations[numbers], self.actions[numbers] #labels[numbers]
+
+
+class FullBetterDatasetLoader():
+
+    def __init__(self, envs, batch_size, algo, seed, multi_game=False):
+        self.rng = default_rng()
+        self.multi_game = multi_game
+        self.batch_size = batch_size
+        self.envs = envs
+		
+		self.env = envs[0]
+
+        self.observations, self.actions = np.load(f"bigger_data/obs_{self.env}.npy"), np.load("bigger_data/act_{self.env}.npy")
+       	indices = np.random.permutation(self.actions.shape[0])
+        self.actions = self.actions[indices]
+        self.observations = self.observations[indices] 
+
+		self.nr_batches = self.actions.shape[0] // self.batch_size
+
+        self.batch_cnt = 0
+	
+	def is_finished(self):
+		return not (self.batch_cnt < self.nr_batches)
+
+	def get_next_batch(self, batch_size):
+		obs = self.observations[self.batch_cnt * batch_size: (self.batch_cnt + 1) * batch_size]
+        act = self.actions[self.batch_cnt * batch_size: (self.batch_cnt + 1) * batch_size]
+		self.batch_cnt += 1
+
+		return obs, act 

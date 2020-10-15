@@ -9,7 +9,7 @@ import argparse
 import shutil
 
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '-1'
-os.environ['CUDA_VISIBLE_DEVICES'] = '0'
+os.environ['CUDA_VISIBLE_DEVICES'] = '1'
 sys.path.append("..")
 os.chdir("atari-model-zoo")
 

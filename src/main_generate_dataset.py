@@ -22,7 +22,7 @@ from atari_zoo.atari_wrappers import FireResetEnv, NoopResetEnv, MaxAndSkipEnv,W
 
 from models import MakeAtariModel
 import generate_rollout
-import transfer_table_training as train_perturbation
+import transfer_table_training
 import actions_and_obs_provider
 
 import perturbation_test
@@ -46,22 +46,13 @@ def get_saved_dir(given_algo):
 
 def main(args, use_buffer=True): 
     utils.fix_path()
-    
-    max_noises = [0.01] # [0.005, 0.008, 0.01, 0.05, 0.1]
-    algos = ['rainbow', 'dqn', 'ga', 'es', 'impala', 'a2c']
-    lr = 0.1
-    repeats = 1
-    nr_test_runs = 1
-    nr_different_perts_for_setup = 1 # 3
-    batch_size = 128
-    run_ids = [0,1,2,3]
-    epochs = 3
 
+    run_ids = [0,1,2,3]
     algos = [args.algo]
 
     for algo in algos:
         print(f"Current algo: {algo}")
-        env = args.env
+        env = f"{args.env}NoFrameskip-v4"
 
         saved_trajectories = get_saved_dir(algo)
         data_loader = MultiDatasetLoader([env], algo, False, args.policy_for_training, args.seed, 
@@ -71,8 +62,8 @@ def main(args, use_buffer=True):
                                 
         utils.fix_path()
                                         
-        train_perturbation.generate_more_informative_dataset(m, 
-            max_frames=2500, min_frames=2500, algo=algo, game=env, 
+        transfer_table_training.generate_more_informative_dataset(m, 
+            max_frames=2500, min_frames=2500, algo=algo, game=args.env, 
             data_loader=data_loader, seed=args.seed)
 
 

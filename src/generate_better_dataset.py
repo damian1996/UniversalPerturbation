@@ -62,7 +62,7 @@ class ChunksCreator:
 
     def get_next_batch_if_possible(self, batch_size):
         if self.batch_counter + batch_size >= self.nr_of_batches:
-            return None, True
+            return None, None, True
 
         obs = self.observations[self.batch_counter: self.batch_counter + batch_size]
         act = self.actions[self.batch_counter: self.batch_counter + batch_size]
@@ -74,8 +74,9 @@ class ChunksCreator:
 
 def get_epsilons_for_explorations():
     spaces = [ 
-        np.linspace(0.0, 0.1, num=300),
-        np.linspace(0.1, 0.15, num=50]
+        np.linspace(0.0, 0.1, num=500),
+        np.linspace(0.1, 0.15, num=100),
+        np.linspace(0.16, 0.4, num=30)
     ]
     epsilons = np.concatenate(spaces)
     
@@ -95,18 +96,20 @@ class MultiDatasetLoader():
 
         self.it = 1
         self.trajectories_at_once = 10
-        self.generate_dataset(algo=algo, epsilons=self.epsilons)
+        self.generate_dataset()
         
-    def generate_dataset(self, algo):
-        if self.it * 10 > len(self.all_data_cases):
+    def generate_dataset(self):
+        if self.it * self.trajectories_at_once > len(self.all_data_cases):
             print("End of data")
-            return
+            return True
         
-        data_cases = self.all_data_cases[(self.it-1)*10: self.it*10]
-        self.data_creator.generate_dataset(self.all_training_cases, self.algo)
+        data_cases = self.all_data_cases[(self.it-1)*self.trajectories_at_once: self.it*self.trajectories_at_once]
+        self.data_creator.generate_dataset(data_cases, self.algo)
         utils.fix_path()
 
         self.it += 1
+
+        return False
 
     def get_next_batch_if_possible(self, batch_size):
         return self.data_creator.get_next_batch_if_possible(batch_size)

@@ -230,10 +230,6 @@ def train_universal_perturbation_from_full_dataset(model, to_be_perturbated=Fals
         print(f"All batches number is {frame_count}")
         return {'perturbation': universal_perturbation.eval(), 'losses': all_losses, "old_results": results_during_training}
 
-results_noise = train_perturbation.generate_more_informative_dataset(m, 
-            max_frames=2500, min_frames=2500, algo=algo, game=env, 
-            data_loader=data_loader, seed=args.seed)
-
 
 #@profile
 def generate_more_informative_dataset(model, args=None, test_eps=1, data_loader=None, max_frames=2500, min_frames=2500, game=None,
@@ -244,10 +240,7 @@ def generate_more_informative_dataset(model, args=None, test_eps=1, data_loader=
     m, preprocessing = utils.model_initialization(model)
     adjust_shapes_for_model.fix_reshapes(m, algo)
     config = utils.config_initialization(args)
-
-    left, right = -max_noise, max_noise
-    left_clip, right_clip = 5 * (left / 10), 5 * (right / 10)
-   
+ 
     use_new_loss = True
     batch_size = 64
 
@@ -256,10 +249,8 @@ def generate_more_informative_dataset(model, args=None, test_eps=1, data_loader=
         nA = env.action_space.n
 
         obs = tf.placeholder(tf.float32, [None] + list(env.observation_space.shape), name='obs')
-        
-        X_t = obs
 
-        T = import_model(m, X_t, X_t)
+        T = import_model(m, obs, obs)
         
         action_sample, policy = m.get_action(T)
         action_sample = tf.cast(action_sample, tf.float64)
@@ -276,30 +267,41 @@ def generate_more_informative_dataset(model, args=None, test_eps=1, data_loader=
         obs_noise = env.reset()
         ep_count, frame_count = 0, 1
         
-        full_dataset = []
+        full_obs, full_act = [], []
         nr_of_good_elements = 0
-
-        last_update = False
-        while not last_update: 
+        
+        while True: 
             if args.render: 
                 env.render()
-            
+
             clean_obs1, clean_act1, is_new_dataset_needed = data_loader.get_next_batch_if_possible(batch_size)
             if is_new_dataset_needed:
-                data_loader.generate_dataset()
-                clean_obs1, clean_act1, is_new_dataset_needed = data_loader.get_next_batch(batch_size)
+                is_finished = data_loader.generate_dataset()
+                if is_finished:
+                    break
+                
+                clean_obs1, clean_act1, is_new_dataset_needed = data_loader.get_next_batch_if_possible(batch_size)
 
-            train_dict = {X_t: clean_obs1, obs: clean_act1}
+            train_dict = {obs: clean_obs1, clean_act: tuple(clean_act1)}
             probs1, policy1 = sess.run([probs, policy], feed_dict=train_dict)
 
-            print(nr_of_good_elements)
+            print("checkpoint ", nr_of_good_elements)
 
             for i in range(batch_size):
                 avg_prob = 1.0 / probs1[i].shape[0]
-                if np.max(probs1[i]) > (1.1 * avg_prob):
-                    print(i, ' ', np.min(probs1[i]), avg_prob, np.max(probs1[i]))
+                if np.max(probs1[i]) > (1.2 * avg_prob):
+                    full_obs.append(clean_obs1[i])
+                    full_act.append(clean_act1[i])
+                    nr_of_good_elements += 1
+                    #print(i, ' ', np.min(probs1[i]), avg_prob, np.max(probs1[i]))
 
             if frame_count % 100 == 0:
                 print(dict(psutil.virtual_memory()._asdict()))
  
             frame_count += 1
+
+        obs = np.array(full_obs)
+        act = np.array(full_act)
+        print(obs.shape, act.shape)
+        np.save(open(f'bigger_data/obs_{game}.npy', 'wb'), obs)
+        np.save(open(f'bigger_data/act_{game}.npy', 'wb'), act)

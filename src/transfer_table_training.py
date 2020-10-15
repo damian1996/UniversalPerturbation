@@ -307,7 +307,7 @@ def generate_more_informative_dataset(model, args=None, test_eps=1, data_loader=
         np.save(open(f'bigger_data/act_{game}.npy', 'wb'), act)
 
 
-def train_universal_perturbation_from_random_batches(model, to_be_perturbated=False, args=None, test_eps=1, data_loader=None, n_repeats=1,
+def train_universal_perturbation_for_better_dataset(model, to_be_perturbated=False, args=None, test_eps=1, data_loader=None, n_repeats=1,
                                                     max_frames=2500, min_frames=2500, dataset=None, nr_batches=0, max_noise=0., game=None,
                                                     algo=None, rep_buffer=None, all_training_cases=None, output='', sticky_action_prob=0.0,
                                                     observation_noise = 0.0, render=False, cpu=False, streamline=False, verbose=True,
@@ -347,8 +347,8 @@ def train_universal_perturbation_from_random_batches(model, to_be_perturbated=Fa
         high_level_rep = activations[-2]
 
         clean_act = tf.placeholder(tf.int32, [None], name="action")
-		
-		if use_new_loss:
+        
+        if use_new_loss:
             probs = tf.nn.softmax(policy)
             entropy = probs * utils.log2(probs)
             loss = tf.reduce_sum(entropy) / batch_size
@@ -380,8 +380,8 @@ def train_universal_perturbation_from_random_batches(model, to_be_perturbated=Fa
             perturbated_obs_to_graph = (clean_obs + universal_perturbation.eval(session=sess))
 
             _, l1, probs1 = sess.run([train_op, loss, probs], feed_dict=train_dict)
-
-			if use_new_loss:
+        
+            if use_new_loss:
                 train_dict = {X_t: perturbated_obs_to_graph, obs: clean_obs}
                 _, l1, probs1, policy1 = sess.run([train_op, loss, probs, policy], feed_dict=train_dict)
 

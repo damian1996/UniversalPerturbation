@@ -95,13 +95,10 @@ def main(log_path, args, use_buffer=True):
                     
                         current_pert = None
                         epochs = 1
-						for nr_epoch in range(epochs): 
+                        for nr_epoch in range(epochs): 
                             print(f"NR EPOCH {nr_epoch}")
-
-							if mode == "biggerdata":
-								data_loader = TrajectoriesLoader([env], algo, False, args.policy_for_training, args.seed, 
-                                    saved_trajectories=saved_trajectories)	
-                            elif (mode == "trained") and nr_epoch == 0:
+                            
+                            if (mode == "trained") and nr_epoch == 0:
                                 saved_trajectories = get_saved_dir(algo)
                                 data_loader = TrajectoriesLoader([env], algo, False, args.policy_for_training, args.seed, 
                                     saved_trajectories=saved_trajectories)
@@ -125,30 +122,30 @@ def main(log_path, args, use_buffer=True):
                                             nr_batches=nr_batches, all_training_cases=data_loader.all_training_cases, 
                                             max_noise=max_noise, algo=algo, rep_buffer=data_loader.rep_buffer, game=env, 
                                             data_loader=data_loader, n_repeats=repeats, seed=args.seed, pert_for_next_epoch=current_pert)
-								else:
+                                else:
                                     loader = FullDatasetLoader([env], batch_size, algo) 
                                     results_noise = train_perturbation.train_universal_perturbation_from_full_dataset(m, 
                                             max_frames=2500, min_frames=2500, max_noise=max_noise, algo=algo, game=env, 
                                             loader=loader, n_repeats=repeats, seed=args.seed, pert_for_next_epoch=current_pert)
                                 
-                                perturbation = results_noise["perturbation"] 
+                                perturbation = results_noise["perturbation"]
                             
-							elif mode == "bigger_data":
-								print(f"Algorithm: {algo} Environment: {env} Run Id: {run_ids[2]} NrPert: {nr_pert} Noise max: {max_noise}")
+                            elif mode == "bigger_data":
+                                print(f"Algorithm: {algo} Environment: {env} Run Id: {run_ids[2]} NrPert: {nr_pert} Noise max: {max_noise}")
                                 m = MakeAtariModel(algo,env,run_ids[2],tag="final")()
-								
-								data_loader = FullBetterDataLoader([env], algo, False, args.policy_for_training, args.seed, 
-                                    saved_trajectories=saved_trajectories)
-	
-								nr_batches = data_loader.nr_batches
-								fix_path()
+                                
+                                data_loader = FullBetterDataLoader([env], algo, False, args.policy_for_training, args.seed)
+                                
+                                nr_batches = data_loader.nr_batches
+                                utils.fix_path()
                                         
-                                results_noise = train_perturbation.train_universal_perturbation_from_random_batches(m, 
+                                results_noise = train_perturbation.train_universal_perturbation_for_better_dataset(m, 
                                         max_frames=2500, min_frames=2500, 
                                         nr_batches=nr_batches,
                                         max_noise=max_noise, algo=algo, game=env, 
                                         data_loader=data_loader, n_repeats=repeats, seed=args.seed, pert_for_next_epoch=current_pert)
-								perturbation = results_noise["perturbation"]
+                                
+                                perturbation = results_noise["perturbation"]
                             elif mode == "random":
                                 print(f"{log_path}/random/random_perts")
                                 rand_pert = rpg.get_random_pert(max_noise, f"{log_path}/random/random_perts", nr_pert, args.seed)

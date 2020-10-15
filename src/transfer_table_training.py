@@ -31,6 +31,8 @@ def train_universal_perturbation_from_random_batches(model, to_be_perturbated=Fa
     left, right = -max_noise, max_noise
     left_clip, right_clip = 5 * (left / 10), 5 * (right / 10)
    
+    use_new_loss = True
+
     with tf.Graph().as_default() as graph, tf.Session(config=config) as sess:
         env = utils.create_env(m, preprocessing)
         nA = env.action_space.n
@@ -53,12 +55,16 @@ def train_universal_perturbation_from_random_batches(model, to_be_perturbated=Fa
         activations = [T(layer['name']) for layer in m.layers]
         high_level_rep = activations[-2]
 
-        #clean_act = tf.placeholder(tf.int32, [None], name="action")
-
-        #loss = -tf.losses.sparse_softmax_cross_entropy(labels=clean_act, logits=policy)
+        clean_act = tf.placeholder(tf.int32, [None], name="action")
         
-        probs = tf.nn.softmax(policy)
-        loss = tf.reduce_sum(probs * tf.log(probs))
+        if use_new_loss:
+            probs = tf.nn.softmax(policy)
+            entropy = probs * utils.log2(probs)
+            loss = tf.reduce_sum(entropy) / batch_size
+        else:
+            probs = tf.nn.softmax(policy)
+            loss = -tf.losses.sparse_softmax_cross_entropy(labels=clean_act, logits=policy)
+        
         train_op = tf.compat.v1.train.AdamOptimizer(0.001).minimize(loss)
         
         clip_val = tf.clip_by_value(universal_perturbation, clip_value_min=left, clip_value_max=right)
@@ -90,11 +96,28 @@ def train_universal_perturbation_from_random_batches(model, to_be_perturbated=Fa
             clean_obs, clean_act1 = rep_buffer.get_single_batch(dataset[0], dataset[1], None, 32)
             perturbated_obs_to_graph = (clean_obs + universal_perturbation.eval(session=sess))
             
-            #train_dict = {X_t: perturbated_obs_to_graph, clean_act: tuple(clean_act1), obs: clean_obs}
-            train_dict = {X_t: perturbated_obs_to_graph, obs: clean_obs}
- 
             _, l1, probs1 = sess.run([train_op, loss, probs], feed_dict=train_dict)
+
+            if use_new_loss:
+                train_dict = {X_t: perturbated_obs_to_graph, obs: clean_obs}
+                _, l1, probs1, policy1 = sess.run([train_op, loss, probs, policy], feed_dict=train_dict)
+                
+                if frame_count % 10 == 0:
+                    for i in range(batch_size):
+                        avg_prob = 1.0 / probs1[i].shape[0]
+                        if np.max(probs1[i]) > (1.1 * avg_prob):
+                            print(i, ' ', np.min(probs1[i]), avg_prob, np.max(probs1[i]))
+                
+                loss_name = "Logits loss"
+            else:
+                train_dict = {X_t: perturbated_obs_to_graph, clean_act: tuple(clean_act1), obs: clean_obs}
+                _, l1, probs1, policy1 = sess.run([train_op, loss, probs, policy], feed_dict=train_dict)
+                
+                loss_name = "Actions loss"
             
+            if frame_count % 100 == 0:
+                print(f"Actions loss {l1}")
+
             all_losses.append(l1)
             print(f"New loss {l1} and probs {probs1.shape}") 
 
